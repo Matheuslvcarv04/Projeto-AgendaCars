@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rolemap>
+  <permissions>
+    <permission name="Review portal content" acquire="False">
+      <role name="Manager" />
+      <role name="Gestor" />
+    </permission>
+  </permissions>
+</rolemap>

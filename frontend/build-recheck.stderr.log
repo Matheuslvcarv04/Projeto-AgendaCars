@@ -1,0 +1,172 @@
+Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+ModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at processResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1348:19)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1577:5
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:865:11
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:489:20
+    at innerCallback (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:367:4)
+    at Object.lessLoader (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\less-loader\dist\index.js:74:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Error: 
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at Object.lessLoader (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\less-loader\dist\index.js:74:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+ModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at processResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1348:19)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1577:5
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:865:11
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:489:20
+    at innerCallback (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:367:4)
+    at Object.lessLoader (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\less-loader\dist\index.js:74:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Error: 
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at Object.lessLoader (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\less-loader\dist\index.js:74:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+Error: Execution of module code from module graph (./node_modules/@plone/volto-slate/src/editor/less/editor.less.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./node_modules/@plone/volto-slate/src/editor/less/editor.less) failed: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+ModuleBuildError: Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+Error: Execution of module code from module graph (./node_modules/@plone/volto-slate/src/editor/less/editor.less.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./node_modules/@plone/volto-slate/src/editor/less/editor.less) failed: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at processResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1348:19)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1577:5
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:865:11
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:557:27
+    at innerCallback (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:367:4)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\mini-css-extract-plugin\dist\loader.js:260:9
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\dependencies\LoaderPlugin.js:263:27
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6516:18
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6339:17
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6305:16
+    at Compilation._attachPendingRuntimeModules (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:4645:37)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6283:11
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6265:14
+    at processQueue (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\processAsyncTree.js:69:4)
+    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+Error: Execution of module code from module graph (./node_modules/@plone/volto/theme/themes/pastanaga/extras/extras.less.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./node_modules/@plone/volto/theme/themes/pastanaga/extras/extras.less) failed: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+ModuleBuildError: Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+Error: Execution of module code from module graph (./node_modules/@plone/volto/theme/themes/pastanaga/extras/extras.less.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./node_modules/@plone/volto/theme/themes/pastanaga/extras/extras.less) failed: Module build failed (from ./node_modules/less-loader/dist/cjs.js):
+
+
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
+                 ^
+Error evaluating function `unit`: the first argument to unit must be a number. Have you forgotten parenthesis?
+      Error in C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\@plone\volto\theme\themes\default\globals\site.variables (line 408, column 19)
+    at processResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1348:19)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1577:5
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:865:11
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:557:27
+    at innerCallback (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:367:4)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\mini-css-extract-plugin\dist\loader.js:260:9
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\dependencies\LoaderPlugin.js:263:27
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6516:18
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6339:17
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6305:16
+    at Compilation._attachPendingRuntimeModules (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:4645:37)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6283:11
+    at dispatch (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:134:4)
+    at Object.eachLimit (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\async.js:155:2)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\Compilation.js:6265:14
+    at processQueue (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\util\processAsyncTree.js:69:4)
+    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)
+Module parse failed: Unexpected token (14:0)
+File was parsed as module type 'javascript/auto'.
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+  13 | /* Global */
+> 14 | & { @import "definitions/globals/reset"; }
+     | ^
+  15 | & { @import "definitions/globals/site"; }
+ModuleParseError: Module parse failed: Unexpected token (14:0)
+File was parsed as module type 'javascript/auto'.
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+  13 | /* Global */
+> 14 | & { @import "definitions/globals/reset"; }
+     | ^
+  15 | & { @import "definitions/globals/site"; }
+    at handleParseError (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1729:19)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1884:5
+    at finishResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1419:11)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1371:6
+    at Hook.eval [as callAsync] (eval at create (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:54:1)
+    at processResult (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1357:24)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1577:5
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:873:3
+    at iterateNormalLoaders (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:494:9)
+    at C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\loaders\LoaderRunner.js:518:3
+    at Object.processResource (C:\Users\matheus.lcarvalho\Documents\agend-veic\frontend\node_modules\webpack\lib\NormalModule.js:1526:14)
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.1.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.1.0
+npm notice To update run: npm install -g npm@12.1.0
+npm notice

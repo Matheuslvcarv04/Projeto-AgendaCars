@@ -1,0 +1,310 @@
+:root {
+  --porto-navy: #0b3558;
+  --porto-blue: #075c96;
+  --porto-cyan: #12a9ca;
+  --porto-yellow: #f2c900;
+  --porto-ink: #183247;
+  --porto-muted: #5a6d7b;
+  --porto-background: #f2f6f8;
+  --porto-surface: #ffffff;
+  --porto-line: #d7e1e8;
+  --porto-success: #1d765f;
+  --porto-danger: #a33b36;
+}
+
+.transporte-app-shell {
+  min-height: 100vh;
+  background: var(--porto-background);
+  color: var(--porto-ink);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.transporte-topbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px max(24px, calc((100vw - 1240px) / 2));
+  background: var(--porto-surface);
+  border-top: 5px solid var(--porto-cyan);
+  border-bottom: 1px solid var(--porto-line);
+}
+
+.transporte-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.transporte-brand-mark,
+.transporte-page-marker {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--porto-navy);
+  background: var(--porto-yellow);
+  font-weight: 800;
+}
+
+.transporte-brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.transporte-brand-copy {
+  display: grid;
+  gap: 2px;
+  line-height: 1.15;
+}
+
+.transporte-brand-copy strong {
+  color: var(--porto-navy);
+  font-size: 17px;
+}
+
+.transporte-brand-copy small {
+  color: var(--porto-muted);
+  font-size: 12px;
+}
+
+.transporte-topbar-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--porto-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.transporte-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--porto-success);
+  box-shadow: 0 0 0 3px rgba(29, 118, 95, 0.12);
+}
+
+.transporte-nav {
+  background: var(--porto-navy);
+  box-shadow: inset 0 -3px 0 var(--porto-yellow);
+}
+
+.transporte-nav-inner {
+  display: flex;
+  max-width: 1240px;
+  min-height: 52px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 0 12px;
+  scrollbar-width: thin;
+}
+
+.transporte-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-height: 49px;
+  padding: 0 16px;
+  border-bottom: 3px solid transparent;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.transporte-nav-link:hover,
+.transporte-nav-link.is-active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.transporte-nav-link.is-active {
+  border-bottom-color: var(--porto-yellow);
+}
+
+.transporte-nav-link .icon {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.transporte-main {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 30px 0 56px;
+}
+
+.transporte-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+  padding: 0 0 22px 18px;
+  border-bottom: 1px solid var(--porto-line);
+  border-left: 5px solid var(--porto-cyan);
+}
+
+.transporte-eyebrow {
+  margin: 0 0 7px;
+  color: var(--porto-blue);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.transporte-page-heading h1 {
+  margin: 0;
+  color: var(--porto-navy);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.transporte-page-description {
+  max-width: 720px;
+  margin: 8px 0 0;
+  color: var(--porto-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.transporte-page-marker {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.transporte-page-content .ui.container {
+  width: 100%;
+  margin: 0;
+}
+
+.transporte-page-content .ui.segment {
+  border: 1px solid var(--porto-line);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(11, 53, 88, 0.045);
+}
+
+.transporte-page-content .transporte-stat.ui.segment {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid var(--porto-blue);
+  background: #ffffff;
+  text-align: center;
+}
+
+.transporte-stat--active.ui.segment {
+  border-top-color: var(--porto-yellow) !important;
+}
+
+.transporte-stat--available.ui.segment {
+  border-top-color: var(--porto-cyan) !important;
+}
+
+.transporte-stat .ui.statistic > .value,
+.transporte-stat .ui.statistic > .label {
+  color: var(--porto-navy);
+}
+
+.transporte-app-shell .ui.header {
+  color: var(--porto-navy);
+}
+
+.transporte-app-shell .ui.form .field > label {
+  color: var(--porto-ink);
+  font-size: 13px;
+}
+
+.transporte-app-shell .ui.form input:focus,
+.transporte-app-shell .ui.form textarea:focus,
+.transporte-app-shell .ui.form .selection.dropdown:focus {
+  border-color: var(--porto-cyan);
+}
+
+.transporte-app-shell .ui.primary.button,
+.transporte-app-shell .ui.positive.button {
+  background: var(--porto-blue);
+}
+
+.transporte-app-shell .ui.primary.button:hover,
+.transporte-app-shell .ui.positive.button:hover {
+  background: var(--porto-navy);
+}
+
+.transporte-app-shell .ui.yellow.button {
+  background: var(--porto-yellow);
+  color: var(--porto-navy);
+}
+
+.transporte-app-shell .ui.table thead th {
+  background: #e7eff4;
+  color: var(--porto-navy);
+}
+
+.transporte-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px max(24px, calc((100vw - 1240px) / 2));
+  border-top: 1px solid var(--porto-line);
+  background: var(--porto-surface);
+  color: var(--porto-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 680px) {
+  .transporte-topbar {
+    min-height: 66px;
+    padding: 10px 16px;
+  }
+
+  .transporte-topbar-status {
+    font-size: 0;
+  }
+
+  .transporte-nav-inner {
+    padding: 0 6px;
+  }
+
+  .transporte-nav-link {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .transporte-main {
+    width: calc(100% - 32px);
+    padding-top: 22px;
+  }
+
+  .transporte-page-heading {
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-left: 12px;
+  }
+
+  .transporte-page-heading h1 {
+    font-size: 23px;
+  }
+
+  .transporte-page-marker {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .transporte-footer {
+    flex-direction: column;
+    padding: 14px 16px;
+  }
+}

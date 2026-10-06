@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transporte"
+version = "1.0.0"
+description = "Add-on de transporte institucional do Porto do Recife"
+requires-python = ">=3.11"
+dependencies = [
+    "Plone>=6.0,<7.0",
+    "plone.restapi>=9.0,<11.0",
+    "plone.app.dexterity>=3.0,<6.0",
+    "plone.app.vocabularies>=4.0,<8.0",
+    "z3c.relationfield>=3.0,<4.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+transporte = ["*.zcml", "profiles/**/*.xml"]
+
+[project.entry-points."z3c.autoinclude.plugin"]
+target = "plone"

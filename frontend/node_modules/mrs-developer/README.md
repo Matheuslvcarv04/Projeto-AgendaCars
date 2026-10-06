@@ -1,0 +1,210 @@
+# mrs-developer
+
+[![Build Status](https://travis-ci.com/collective/mrs-developer.svg?branch=master)](https://travis-ci.com/collective/mrs-developer)
+
+mrs-developer is an NodeJS utility that makes it easy to work with NPM projects containing lots of packages, of which you only want to develop some.
+
+Note: [mr-developer](https://github.com/collective/mr-developer) is mrs-developer's predecessor. It is now obsolete. mr-developer has a dependency to nodegit which is painful to install. mrs-developer depends on simple-git, which does not build the Git library (it just requires to have the git command available in the environment).
+
+It allows to replace any given dependency with a checkout from its Git repository.
+
+![screenshot](https://raw.githubusercontent.com/collective/mrs-developer/master/docs/mrs-developer.jpeg 'Console screenshot')
+
+The paths to those local checkouts are added in `tsconfig.json` or in `tsconfig.base.json` if it exists (or `jsconfig.json` if we don't use TypeScript).
+
+Dependencies are listed in a file named `mrs.developer.json`:
+
+```json
+{
+  "ngx-tooltip": {
+    "url": "https://github.com/pleerock/ngx-tooltip.git"
+  },
+  "angular-traversal": {
+    "url": "https://github.com/makinacorpus/angular-traversal",
+    "branch": "test-as-subproject"
+  },
+  "plone.restapi-angular": {
+    "path": "src/lib",
+    "package": "@plone/restapi-angular",
+    "url": "git@github.com:plone/plone.restapi-angular.git",
+    "https": "https://github.com/plone/plone.restapi-angular.git",
+    "tag": "1.3.1"
+  }
+}
+```
+
+It also supports mono-repositories with the `packages` attribute providing a dictionnary of package ids / pathes:
+
+```json
+{
+  "angular": {
+    "url": "https://github.com/angular/angular.git",
+    "packages": {
+      "@angular/core": "/packages/core",
+      "@angular/forms": "/packages/forms"
+    }
+  }
+}
+```
+
+By using the `local` property, we can declare a path that will be added in `tsconfig.json` (no repository will be pulled):
+
+```json
+{
+  "my-package": {
+    "local": "lib/my/package"
+  }
+}
+```
+
+By running the `missdev` command, those repositories will be checked out in the `./src/develop` folder and they will be added into the `tsconfig.json` file in the `paths` property, so the compiler will use them instead of the `node_modules` ones.
+
+Existing `paths` entries will be preserved if they do not target a folder located in `src/develop`.
+
+It is possible to keep a package in mrs-developer.json, but don't process it, by setting `develop: false`. This allows an easier development workflow of those packages, as they can be easier toggled between dev and released modes.
+
+```json
+{
+  "my-package": {
+    "local": "lib/my/package",
+    "develop": false
+  }
+}
+```
+
+You can override the default `output` provided via command line per repository in `mrs.developer.json`.
+
+```json
+{
+	"volto-light-theme": {
+		"output": "addons",
+		"package": "@kitconcept/volto-light-theme",
+		"url": "git@github.com:kitconcept/volto-light-theme.git",
+		"https": "https://github.com/kitconcept/volto-light-theme.git"
+	}
+}
+```
+
+This repository will be checked out in the `addons` directory, instead of the one provided via command line. It won't prepend the `src` prefix to it, if you still want it, you should provide it in the `output` key. This might be useful in combination with monorepos where you want to checkout packages into workspaces folders.
+
+## Usage
+
+```
+$ missdev
+```
+
+will fetch last changes from each repositories, and checkout the specified branch.
+
+If a repository contains non committed changes or if the merge has conflicts, it will not be updated, and the user will have to update it manually.
+
+```
+$ missdev --no-fetch
+```
+
+will just checkout the specified branches or tags without fetching the remote repositories.
+
+```
+$ missdev --hard
+```
+
+will do a hard reset before updating, so local changes are overriden.
+
+```
+$ missdev --last-tag
+```
+
+will get the last tag (according chronological order) for each epository and will update `mrs.developer.json` accordingly.
+
+```
+$ missdev --config=jsconfig.json
+```
+
+allows to update a different file than `tsconfig.json` (might be useful in non-Angular context).
+
+```
+$ missdev --no-config
+```
+
+will not write any config
+
+```
+$ missdev --output=myfolder
+```
+
+will checkout the files in src/myfolder
+
+```
+$ missdev --https
+```
+
+will use the `https` entry (if it exists) instead of the `url` entry for each repository
+
+```
+$ missdev --fetch-https
+```
+
+will use the `https` entry (if it exists) instead of the `url` entry for each repository, ONLY for the fetch remote
+
+```
+$ missdev --fallback-to-default-branch
+```
+
+will check out the default branch if the requested branch or tag does not exist in the repository.
+
+```
+$ missdev --force-default-branch
+```
+
+will check out the default branch even though another branch or tag is mentioned in `mrs.developer.json`.
+
+## Config file structure
+
+The entry key is used to name the folder where we checkout the repository in `./src/develop`.
+
+Properties:
+
+- `package`: Optional. Name of the package that will be mention in `paths`. If not provided, default to entry key.
+- `path`: Optional. Source path in the repository. Will be concatenated to the local repository path in `tsconfig.json`.
+- `url`: Mandatory. Git repository remote URL.
+- `branch`: Optional. Branch name, defaults to the remote's default branch. Ignored if `tag` is defined.
+- `tag`: Optional. Tag name.
+- `develop`: Optional. Boolean, can be toggled on/off to activate/deactivate a package. If activated, then deactivated afterwards, the package gets removed from `jsconfig` maintaining the synchronization with `mrs.developer.json`. Default is `true`.
+- `output`: Optional. Output directory override per repository.
+- `filterBlobs`: Optional. Used together with `tag` or `branch`, it creates a partial clone defaulting to the tag or branch specified. This partial clone won't clone the whole repository, but only the tag or branch specified.
+
+## Usage with (non-TypeScript) React
+
+Create a minimal `jsconfig.json` file in the project root (see https://code.visualstudio.com/docs/languages/jsconfig):
+
+```
+{
+    "compilerOptions": {}
+}
+```
+
+And run:
+
+```
+$ missdev --config=jsconfig.json
+```
+
+To make sure the `jsconfig.json` paths defined by mrs-developer are used in Webpack, change your `webpack.config.js` like this:
+
+```
+const pathsConfig = require('./jsconfig').compilerOptions.paths;
+const alias = {};
+Object.keys(pathsConfig).forEach(package => {
+  alias[package] = pathsConfig[package][0];
+});
+
+...
+
+resolve: {
+    ...
+    alias: alias
+}
+```
+
+## Credits
+
+mrs-developer is shamelessly inspired by the well-known [mr.developer](https://pypi.python.org/pypi/mr.developer) Python buildout extension.

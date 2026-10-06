@@ -1,0 +1,35 @@
+<configure
+     xmlns="http://namespaces.zope.org/zope"
+       xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+     xmlns:browser="http://namespaces.zope.org/browser">
+     <include package="plone.restapi" />
+  <genericsetup:registerProfile
+          name="default"
+          title="Transporte Porto do Recife"
+          directory="profiles/default"
+          description="Tipos de conteúdo e workflow de transporte institucional."
+          provides="Products.GenericSetup.interfaces.EXTENSION" />
+  <browser:page
+       name="@disponibilidade"
+       for="plone.restapi.interfaces.IPloneRestapiLayer"
+       class="transporte.services.disponibilidade.DisponibilidadeGet"
+       permission="zope2.View" />
+  <browser:page
+       name="@painel"
+       for="plone.restapi.interfaces.IPloneRestapiLayer"
+       class="transporte.services.painel.PainelGet"
+       permission="zope2.View" />
+  <browser:page
+       name="@relatorio-mensal"
+       for="plone.restapi.interfaces.IPloneRestapiLayer"
+       class="transporte.services.relatorio_mensal.RelatorioMensalGet"
+       permission="zope2.View" />
+  <subscriber
+      for="transporte.content.solicitacao.ISolicitacao
+           Products.CMFCore.interfaces.IActionSucceededEvent"
+      handler="transporte.content.solicitacao.criar_viagem_ao_aprovar" />
+  <subscriber
+      for="transporte.content.viagem.IViagem
+           zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+      handler="transporte.content.viagem.atualizar_km_percorridos" />
+</configure>

@@ -1,0 +1,5 @@
+Plone<7.0,>=6.0
+plone.restapi<11.0,>=9.0
+plone.app.dexterity<6.0,>=3.0
+plone.app.vocabularies<8.0,>=4.0
+z3c.relationfield<4.0,>=3.0

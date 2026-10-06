@@ -1,0 +1,579 @@
+{
+  "client": {
+    "js": [
+      "http://localhost:3001/static/js/runtime~client.js",
+      "http://localhost:3001/static/js/client.js"
+    ],
+    "chunks": [
+      "runtime~client",
+      "client"
+    ]
+  },
+  "node_modules_prettier_standalone_mjs": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_prettier_standalone_mjs.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_prettier_standalone_mjs"
+    ]
+  },
+  "node_modules_prettier_plugins_html_mjs": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_prettier_plugins_html_mjs.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_prettier_plugins_html_mjs"
+    ]
+  },
+  "node_modules_prismjs_components_prism-core_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_prismjs_components_prism-core_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_prismjs_components_prism-core_js"
+    ]
+  },
+  "node_modules_react-select_dist_react-select_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-select_dist_react-select_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-select_dist_react-select_esm_js"
+    ]
+  },
+  "node_modules_react-virtualized_dist_commonjs_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-virtualized_dist_commonjs_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-virtualized_dist_commonjs_index_js"
+    ]
+  },
+  "node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js"
+    ]
+  },
+  "node_modules_react-select-async-paginate_es_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-select-async-paginate_es_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-select-async-paginate_es_index_js"
+    ]
+  },
+  "node_modules_react-select_async_dist_react-select_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-select_async_dist_react-select_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-select_async_dist_react-select_esm_js"
+    ]
+  },
+  "node_modules_react-select_creatable_dist_react-select_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-select_creatable_dist_react-select_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-select_creatable_dist_react-select_esm_js"
+    ]
+  },
+  "node_modules_react-select_async-creatable_dist_react-select_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-select_async-creatable_dist_react-select_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-select_async-creatable_dist_react-select_esm_js"
+    ]
+  },
+  "node_modules_diff_dist_diff_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_diff_dist_diff_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_diff_dist_diff_js"
+    ]
+  },
+  "node_modules_react-dates_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-dates_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-dates_index_js"
+    ]
+  },
+  "node_modules_react-dnd_lib_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-dnd_lib_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-dnd_lib_index_js"
+    ]
+  },
+  "node_modules_react-dnd-html5-backend_lib_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-dnd-html5-backend_lib_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-dnd-html5-backend_lib_index_js"
+    ]
+  },
+  "node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js"
+    ]
+  },
+  "node_modules_rrule_dist_esm_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_rrule_dist_esm_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_rrule_dist_esm_index_js"
+    ]
+  },
+  "node_modules_dnd-kit_core_dist_core_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_dnd-kit_core_dist_core_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_dnd-kit_core_dist_core_esm_js"
+    ]
+  },
+  "node_modules_dnd-kit_sortable_dist_sortable_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_dnd-kit_sortable_dist_sortable_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_dnd-kit_sortable_dist_sortable_esm_js"
+    ]
+  },
+  "node_modules_dnd-kit_utilities_dist_utilities_esm_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_dnd-kit_utilities_dist_utilities_esm_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_dnd-kit_utilities_dist_utilities_esm_js"
+    ]
+  },
+  "Form": {
+    "js": [
+      "http://localhost:3001/static/js/Form.chunk.js"
+    ],
+    "chunks": [
+      "Form"
+    ]
+  },
+  "Widgets": {
+    "js": [
+      "http://localhost:3001/static/js/Widgets.chunk.js"
+    ],
+    "chunks": [
+      "Widgets"
+    ]
+  },
+  "locales_en_json": {
+    "js": [
+      "http://localhost:3001/static/js/locales_en_json.chunk.js"
+    ],
+    "chunks": [
+      "locales_en_json"
+    ]
+  },
+  "node_modules_plone_volto_src_components_theme_View_EventView_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_theme_View_EventView_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_theme_View_EventView_jsx"
+    ]
+  },
+  "node_modules_react-simple-code-editor_lib_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-simple-code-editor_lib_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-simple-code-editor_lib_index_js"
+    ]
+  },
+  "node_modules_prismjs_components_prism-markup_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_prismjs_components_prism-markup_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_prismjs_components_prism-markup_js"
+    ]
+  },
+  "node_modules_react-image-gallery_build_image-gallery_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_react-image-gallery_build_image-gallery_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_react-image-gallery_build_image-gallery_js"
+    ]
+  },
+  "Contents": {
+    "js": [
+      "http://localhost:3001/static/js/Contents.chunk.js"
+    ],
+    "chunks": [
+      "Contents"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Rules_Rules_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Rules_Rules_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Rules_Rules_jsx"
+    ]
+  },
+  "Controlpanels": {
+    "js": [
+      "http://localhost:3001/static/js/Controlpanels.chunk.js"
+    ],
+    "chunks": [
+      "Controlpanels"
+    ]
+  },
+  "RulesControlpanel": {
+    "js": [
+      "http://localhost:3001/static/js/RulesControlpanel.chunk.js"
+    ],
+    "chunks": [
+      "RulesControlpanel"
+    ]
+  },
+  "UsersControlpanel": {
+    "js": [
+      "http://localhost:3001/static/js/UsersControlpanel.chunk.js"
+    ],
+    "chunks": [
+      "UsersControlpanel"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb"
+    ]
+  },
+  "GroupsControlpanel": {
+    "js": [
+      "http://localhost:3001/static/js/GroupsControlpanel.chunk.js"
+    ],
+    "chunks": [
+      "GroupsControlpanel"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx"
+    ]
+  },
+  "ContentTypesControlpanel": {
+    "js": [
+      "http://localhost:3001/static/js/ContentTypesControlpanel.chunk.js"
+    ],
+    "chunks": [
+      "ContentTypesControlpanel"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx"
+    ]
+  },
+  "node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx"
+    ]
+  },
+  "node_modules_rc-time-picker_es_index_js": {
+    "js": [
+      "http://localhost:3001/static/js/node_modules_rc-time-picker_es_index_js.chunk.js"
+    ],
+    "chunks": [
+      "node_modules_rc-time-picker_es_index_js"
+    ]
+  },
+  "noentry": {
+    "svg": [
+      "http://localhost:3001/static/media/icons.022583c4.svg",
+      "http://localhost:3001/static/media/block-maps.731e84f6.svg",
+      "http://localhost:3001/static/media/Logo.16e25cdf.svg",
+      "http://localhost:3001/static/media/list-numbered.db0ca3d1.svg",
+      "http://localhost:3001/static/media/group.7d14cc39.svg",
+      "http://localhost:3001/static/media/globe.ef4c6653.svg",
+      "http://localhost:3001/static/media/configuration.735484ae.svg",
+      "http://localhost:3001/static/media/unlink.040cec53.svg",
+      "http://localhost:3001/static/media/link.ab502a5f.svg",
+      "http://localhost:3001/static/media/configuration-app.9c74f587.svg",
+      "http://localhost:3001/static/media/add-user.b8bba572.svg",
+      "http://localhost:3001/static/media/world.02d595ce.svg",
+      "http://localhost:3001/static/media/user.63c6b894.svg",
+      "http://localhost:3001/static/media/calendar.bdcf184c.svg",
+      "http://localhost:3001/static/media/undo-control-panel.a4f6d739.svg",
+      "http://localhost:3001/static/media/drag.c428b057.svg",
+      "http://localhost:3001/static/media/upload.fa4c91ea.svg",
+      "http://localhost:3001/static/media/add-on.5e36c5f7.svg",
+      "http://localhost:3001/static/media/paint.8ff9a5ab.svg",
+      "http://localhost:3001/static/media/tag.36bab3e8.svg",
+      "http://localhost:3001/static/media/show.cdbc344b.svg",
+      "http://localhost:3001/static/media/nav.ba27d9b5.svg",
+      "http://localhost:3001/static/media/strikethrough.7f54e527.svg",
+      "http://localhost:3001/static/media/semaphore.44d1a2ac.svg",
+      "http://localhost:3001/static/media/translate.78271d4a.svg",
+      "http://localhost:3001/static/media/settings.616c8224.svg",
+      "http://localhost:3001/static/media/discussion.ee0dd12e.svg",
+      "http://localhost:3001/static/media/camera.448f7e56.svg",
+      "http://localhost:3001/static/media/log-out.8671f66f.svg",
+      "http://localhost:3001/static/media/plone.9a6c7686.svg",
+      "http://localhost:3001/static/media/language.2a82bd9e.svg",
+      "http://localhost:3001/static/media/megaphone.15b111bf.svg",
+      "http://localhost:3001/static/media/help.53b167be.svg",
+      "http://localhost:3001/static/media/more.a134f876.svg",
+      "http://localhost:3001/static/media/cut.bb8862ff.svg",
+      "http://localhost:3001/static/media/unlock.e2356b7a.svg",
+      "http://localhost:3001/static/media/copy.8e592807.svg",
+      "http://localhost:3001/static/media/block-video.832fa3ff.svg",
+      "http://localhost:3001/static/media/editing.db56fb9e.svg",
+      "http://localhost:3001/static/media/pen.33b456cc.svg",
+      "http://localhost:3001/static/media/subindex.2899b792.svg",
+      "http://localhost:3001/static/media/apps.9cf91b5b.svg",
+      "http://localhost:3001/static/media/superindex.0c3a8b35.svg",
+      "http://localhost:3001/static/media/list-bullet.85a7f948.svg",
+      "http://localhost:3001/static/media/content.a5cc3481.svg",
+      "http://localhost:3001/static/media/table.0c8c5812.svg",
+      "http://localhost:3001/static/media/rename.91ea7d36.svg",
+      "http://localhost:3001/static/media/default-image.9451b251.svg",
+      "http://localhost:3001/static/media/reload.aa766fdd.svg",
+      "http://localhost:3001/static/media/info.ddcce1bb.svg",
+      "http://localhost:3001/static/media/page.665812f5.svg",
+      "http://localhost:3001/static/media/delete.5110078a.svg",
+      "http://localhost:3001/static/media/properties.320f5ea4.svg",
+      "http://localhost:3001/static/media/save.89836d2d.svg",
+      "http://localhost:3001/static/media/circle-dismiss.2e0becaf.svg",
+      "http://localhost:3001/static/media/content-existing.dc4270f9.svg",
+      "http://localhost:3001/static/media/add-document.498cfe6e.svg",
+      "http://localhost:3001/static/media/back-down.f190e510.svg",
+      "http://localhost:3001/static/media/redo.b25d5210.svg",
+      "http://localhost:3001/static/media/bold.dcf91fd5.svg",
+      "http://localhost:3001/static/media/content-listing.6e48139f.svg",
+      "http://localhost:3001/static/media/open.1d47e077.svg",
+      "http://localhost:3001/static/media/code.50079f1b.svg",
+      "http://localhost:3001/static/media/image-full.54f88ffe.svg",
+      "http://localhost:3001/static/media/error.54aaafc6.svg",
+      "http://localhost:3001/static/media/image-right.d019c29a.svg",
+      "http://localhost:3001/static/media/image-left.98b59864.svg",
+      "http://localhost:3001/static/media/images.f7c31220.svg",
+      "http://localhost:3001/static/media/format-clear.f3792997.svg",
+      "http://localhost:3001/static/media/warning.65582d1a.svg",
+      "http://localhost:3001/static/media/paste.4a1fddf6.svg",
+      "http://localhost:3001/static/media/forbidden.a0bfe1cc.svg",
+      "http://localhost:3001/static/media/circle-bottom.bbdfe451.svg",
+      "http://localhost:3001/static/media/circle-top.80973a62.svg",
+      "http://localhost:3001/static/media/ready.10792faa.svg",
+      "http://localhost:3001/static/media/indent.7cf71394.svg",
+      "http://localhost:3001/static/media/circle-plus.3d5924e5.svg",
+      "http://localhost:3001/static/media/zoom.3b262a3d.svg",
+      "http://localhost:3001/static/media/column-before.da184eda.svg",
+      "http://localhost:3001/static/media/grid-block.91c7e57c.svg",
+      "http://localhost:3001/static/media/grid-4.2b07a173.svg",
+      "http://localhost:3001/static/media/column-after.0def2a4a.svg",
+      "http://localhost:3001/static/media/quote.b5857ad5.svg",
+      "http://localhost:3001/static/media/row-before.94de1b93.svg",
+      "http://localhost:3001/static/media/block-image.8a4a14d5.svg",
+      "http://localhost:3001/static/media/row-after.f18383dd.svg",
+      "http://localhost:3001/static/media/file.4cbd8a91.svg",
+      "http://localhost:3001/static/media/image.2716077d.svg",
+      "http://localhost:3001/static/media/grid-3.19cf9f8d.svg",
+      "http://localhost:3001/static/media/sort-up.31d9d425.svg",
+      "http://localhost:3001/static/media/email.235dfba1.svg",
+      "http://localhost:3001/static/media/sort-down.836fb99a.svg",
+      "http://localhost:3001/static/media/underline.a3d67623.svg",
+      "http://localhost:3001/static/media/column-delete.61fcc2eb.svg",
+      "http://localhost:3001/static/media/row-delete.c958d1e3.svg",
+      "http://localhost:3001/static/media/security.72d2fe61.svg",
+      "http://localhost:3001/static/media/videocamera.ac660e95.svg",
+      "http://localhost:3001/static/media/folder.7139bb4a.svg",
+      "http://localhost:3001/static/media/undo.d0fa9115.svg",
+      "http://localhost:3001/static/media/fullscreen.bbfae1dc.svg",
+      "http://localhost:3001/static/media/grid-2.4068e674.svg",
+      "http://localhost:3001/static/media/image-fit.77035f56.svg",
+      "http://localhost:3001/static/media/image-wide.b775fe57.svg",
+      "http://localhost:3001/static/media/image-narrow.2f8dc819.svg",
+      "http://localhost:3001/static/media/home.a3aef26f.svg",
+      "http://localhost:3001/static/media/subheading.e6b99d8a.svg",
+      "http://localhost:3001/static/media/move-down.7706c949.svg",
+      "http://localhost:3001/static/media/move-up.72a42e34.svg",
+      "http://localhost:3001/static/media/heading.fb35a822.svg",
+      "http://localhost:3001/static/media/checkbox-checked.2197263d.svg",
+      "http://localhost:3001/static/media/check-blank.a523d512.svg",
+      "http://localhost:3001/static/media/blank.0f85be1c.svg",
+      "http://localhost:3001/static/media/check.9526e437.svg",
+      "http://localhost:3001/static/media/grid-1.f89d5f8b.svg",
+      "http://localhost:3001/static/media/checkbox-indeterminate.a9e250a1.svg",
+      "http://localhost:3001/static/media/clear.8a096e76.svg",
+      "http://localhost:3001/static/media/pause.6c291c45.svg",
+      "http://localhost:3001/static/media/subtext.40c0c08f.svg",
+      "http://localhost:3001/static/media/text.e02a93fe.svg",
+      "http://localhost:3001/static/media/ahead.d7698530.svg",
+      "http://localhost:3001/static/media/down.dde5dafc.svg",
+      "http://localhost:3001/static/media/back.da8faea3.svg",
+      "http://localhost:3001/static/media/up.0c346ab8.svg",
+      "http://localhost:3001/static/media/description.981dc40b.svg",
+      "http://localhost:3001/static/media/italic.b9ca447f.svg",
+      "http://localhost:3001/static/media/checkbox-unchecked.fca312f6.svg",
+      "http://localhost:3001/static/media/down-key.9bda307f.svg",
+      "http://localhost:3001/static/media/left-key.0f88b754.svg",
+      "http://localhost:3001/static/media/right-key.8d1aa1ea.svg",
+      "http://localhost:3001/static/media/up-key.7b24027b.svg",
+      "http://localhost:3001/static/media/play.c7acb63f.svg",
+      "http://localhost:3001/static/media/add.ac81d5ba.svg"
+    ],
+    "eot": [
+      "http://localhost:3001/static/media/icons.dbc1ef8b.eot"
+    ],
+    "woff": [
+      "http://localhost:3001/static/media/icons.df45b7de.woff"
+    ],
+    "ttf": [
+      "http://localhost:3001/static/media/icons.06400145.ttf"
+    ],
+    "woff2": [
+      "http://localhost:3001/static/media/Poppins-RegularItalic-devanagari.ba7c820d.woff2",
+      "http://localhost:3001/static/media/Poppins-BoldItalic-devanagari.17352fe0.woff2",
+      "http://localhost:3001/static/media/Poppins-Regular-devanagari.790d0c8d.woff2",
+      "http://localhost:3001/static/media/Poppins-Light-devanagari.dc820d9f.woff2",
+      "http://localhost:3001/static/media/Poppins-Bold-devanagari.7def222d.woff2",
+      "http://localhost:3001/static/media/Poppins-Semibold-devanagari.79e6e81d.woff2",
+      "http://localhost:3001/static/media/Poppins-RegularItalic-latin.a242ba0d.woff2",
+      "http://localhost:3001/static/media/Poppins-BoldItalic-latin.858549c2.woff2",
+      "http://localhost:3001/static/media/Poppins-Regular-latin.9212f6f9.woff2",
+      "http://localhost:3001/static/media/Poppins-Light-latin.8d91ec1c.woff2",
+      "http://localhost:3001/static/media/Poppins-Bold-latin.25b0e113.woff2",
+      "http://localhost:3001/static/media/Poppins-Semibold-latin.a09f2fcc.woff2",
+      "http://localhost:3001/static/media/Poppins-RegularItalic-latinext.efd6a6a1.woff2",
+      "http://localhost:3001/static/media/Poppins-BoldItalic-latinext.34ad495c.woff2",
+      "http://localhost:3001/static/media/Poppins-Regular-latinext.0ed299a4.woff2",
+      "http://localhost:3001/static/media/Poppins-Semibold-latinext.a6ff41d1.woff2",
+      "http://localhost:3001/static/media/Poppins-Light-latinext.6731e1ba.woff2",
+      "http://localhost:3001/static/media/Poppins-Bold-latinext.96b6d546.woff2"
+    ],
+    "png": [
+      "http://localhost:3001/static/media/flags.9c74e172.png"
+    ],
+    "map": [
+      "http://localhost:3001/static/js/client.js.map",
+      "http://localhost:3001/static/js/runtime~client.js.map",
+      "http://localhost:3001/static/js/node_modules_prettier_standalone_mjs.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_prettier_plugins_html_mjs.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_prismjs_components_prism-core_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-select_dist_react-select_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-virtualized_dist_commonjs_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-select-async-paginate_es_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-select_async_dist_react-select_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-select_creatable_dist_react-select_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-select_async-creatable_dist_react-select_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_diff_dist_diff_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-dates_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-dnd_lib_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-dnd-html5-backend_lib_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_rrule_dist_esm_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_dnd-kit_core_dist_core_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_dnd-kit_sortable_dist_sortable_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_dnd-kit_utilities_dist_utilities_esm_js.chunk.js.map",
+      "http://localhost:3001/static/js/Form.chunk.js.map",
+      "http://localhost:3001/static/js/Widgets.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_theme_View_EventView_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-simple-code-editor_lib_index_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_prismjs_components_prism-markup_js.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_react-image-gallery_build_image-gallery_js.chunk.js.map",
+      "http://localhost:3001/static/js/Contents.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Rules_Rules_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/Controlpanels.chunk.js.map",
+      "http://localhost:3001/static/js/RulesControlpanel.chunk.js.map",
+      "http://localhost:3001/static/js/UsersControlpanel.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb.chunk.js.map",
+      "http://localhost:3001/static/js/GroupsControlpanel.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/ContentTypesControlpanel.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx.chunk.js.map",
+      "http://localhost:3001/static/js/node_modules_rc-time-picker_es_index_js.chunk.js.map"
+    ]
+  }
+}

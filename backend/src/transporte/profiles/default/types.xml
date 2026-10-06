@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_types">
+  <object name="Solicitacao" meta_type="Dexterity FTI">
+    <property name="title">Solicitacao</property>
+    <property name="description">Solicitação de transporte institucional.</property>
+    <property name="factory">transporte.solicitacao</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+    <property name="schema">transporte.content.solicitacao.ISolicitacao</property>
+  </object>
+  <object name="Viagem" meta_type="Dexterity FTI">
+    <property name="title">Viagem</property>
+    <property name="description">Viagem criada a partir de uma solicitação aprovada.</property>
+    <property name="factory">transporte.viagem</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+    <property name="schema">transporte.content.viagem.IViagem</property>
+  </object>
+  <object name="Veiculo" meta_type="Dexterity FTI">
+    <property name="title">Veiculo</property>
+    <property name="description">Cadastro de veículos institucionais.</property>
+    <property name="factory">transporte.veiculo</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+    <property name="schema">transporte.content.veiculo.IVeiculo</property>
+  </object>
+  <object name="Motorista" meta_type="Dexterity FTI">
+    <property name="title">Motorista</property>
+    <property name="description">Cadastro de motoristas institucionais.</property>
+    <property name="factory">transporte.motorista</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+    <property name="schema">transporte.content.motorista.IMotorista</property>
+  </object>
+  <object name="Abastecimento" meta_type="Dexterity FTI">
+    <property name="title">Abastecimento</property>
+    <property name="description">Histórico de abastecimento da frota.</property>
+    <property name="factory">transporte.abastecimento</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+    <property name="schema">transporte.content.abastecimento.IAbastecimento</property>
+  </object>
+</object>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dc-workflow workflow-definition="solicitacao_workflow"
+             xmlns="http://namespaces.zope.org/dc-workflow">
+  <meta>
+    <title>Workflow de solicitação de transporte</title>
+    <description>Decisão do gestor sobre solicitações de transporte.</description>
+  </meta>
+
+  <state state_id="pendente" title="Pendente">
+    <description>Solicitação aguardando decisão do gestor.</description>
+    <permission-map name="View" acquired="True">
+      <permission-role>Authenticated</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Gestor</permission-role>
+      <permission-role>Solicitante</permission-role>
+    </permission-map>
+  </state>
+  <state state_id="aprovada" title="Aprovada">
+    <description>Solicitação aprovada e convertida em viagem.</description>
+    <permission-map name="View" acquired="True">
+      <permission-role>Authenticated</permission-role>
+    </permission-map>
+  </state>
+  <state state_id="alterada" title="Alterada">
+    <description>Solicitação devolvida para ajustes.</description>
+    <permission-map name="View" acquired="True">
+      <permission-role>Authenticated</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Gestor</permission-role>
+      <permission-role>Solicitante</permission-role>
+    </permission-map>
+  </state>
+  <state state_id="recusada" title="Recusada">
+    <description>Solicitação recusada pelo gestor.</description>
+    <permission-map name="View" acquired="True">
+      <permission-role>Authenticated</permission-role>
+    </permission-map>
+  </state>
+
+  <transition transition_id="aprovar" title="Aprovar" new_state="aprovada">
+    <description>Aprova a solicitação e cria automaticamente a viagem.</description>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+      <guard-role>Manager</guard-role>
+      <guard-role>Gestor</guard-role>
+    </guard>
+  </transition>
+  <transition transition_id="alterar" title="Alterar" new_state="alterada">
+    <description>Devolve a solicitação para ajustes.</description>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+      <guard-role>Manager</guard-role>
+      <guard-role>Gestor</guard-role>
+    </guard>
+  </transition>
+  <transition transition_id="recusar" title="Recusar" new_state="recusada">
+    <description>Recusa a solicitação.</description>
+    <guard>
+      <guard-permission>Review portal content</guard-permission>
+      <guard-role>Manager</guard-role>
+      <guard-role>Gestor</guard-role>
+    </guard>
+  </transition>
+  <transition transition_id="reenviar" title="Reenviar" new_state="pendente">
+    <description>Reenvia uma solicitação alterada para nova decisão.</description>
+    <guard>
+      <guard-permission>Modify portal content</guard-permission>
+      <guard-role>Manager</guard-role>
+      <guard-role>Solicitante</guard-role>
+    </guard>
+  </transition>
+
+  <variable variable_id="review_state" for_catalog="True" update_always="True">
+    <description>Estado atual da solicitação.</description>
+    <default>pendente</default>
+    <guard-permission>Request review</guard-permission>
+  </variable>
+  <variable variable_id="action" for_catalog="False" update_always="True">
+    <description>Última transição executada.</description>
+    <default>python:None</default>
+    <guard-permission>Request review</guard-permission>
+  </variable>
+</dc-workflow>

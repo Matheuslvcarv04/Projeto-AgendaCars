@@ -1,0 +1,12 @@
+{
+  "name": "@transporte/volto-transporte",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "peerDependencies": {
+    "@plone/volto": ">=18.0.0",
+    "react": ">=18.0.0",
+    "react-redux": ">=8.0.0",
+    "semantic-ui-react": ">=2.1.0"
+  }
+}

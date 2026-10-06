@@ -1,0 +1,43 @@
+{
+  "name": "universal-cookie-express",
+  "version": "4.0.3",
+  "description": "Hook cookies get/set on Express for server-rendering",
+  "main": "cjs/index.js",
+  "module": "es6/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "es6",
+    "cjs",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactivestack/cookies.git"
+  },
+  "bugs": "https://github.com/reactivestack/cookies/issues",
+  "homepage": "https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie-express#readme",
+  "keywords": [
+    "universal",
+    "isomophic",
+    "cookie",
+    "express"
+  ],
+  "author": "Benoit Tremblay <benoit@reactivestack.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib && rimraf es6 && rimraf cjs",
+    "build": "npm run clean && npm run build-es6 && npm run build-cjs && npm run build-legacy",
+    "build-es6": "tsc",
+    "build-cjs": "babel es6 -D -d cjs",
+    "build-legacy": "babel es6 -D -d lib"
+  },
+  "dependencies": {
+    "universal-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "rimraf": "^2.6.1",
+    "typescript": "^3.0.1"
+  }
+}

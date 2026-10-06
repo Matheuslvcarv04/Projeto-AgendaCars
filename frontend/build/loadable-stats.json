@@ -1,0 +1,4654 @@
+{
+  "hash": "e9954cea743d159d892b",
+  "publicPath": "http://localhost:3001/",
+  "outputPath": "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\build\\public",
+  "assetsByChunkName": {
+    "client": [
+      "static/js/client.js",
+      "static/media/content-existing.dc4270f9.svg",
+      "static/media/link.ab502a5f.svg",
+      "static/media/calendar.bdcf184c.svg",
+      "static/media/folder.7139bb4a.svg",
+      "static/media/file.4cbd8a91.svg",
+      "static/media/page.665812f5.svg",
+      "static/media/image.2716077d.svg",
+      "static/media/content.a5cc3481.svg",
+      "static/media/language.2a82bd9e.svg",
+      "static/media/email.235dfba1.svg",
+      "static/media/nav.ba27d9b5.svg",
+      "static/media/world.02d595ce.svg",
+      "static/media/zoom.3b262a3d.svg",
+      "static/media/megaphone.15b111bf.svg",
+      "static/media/editing.db56fb9e.svg",
+      "static/media/code.50079f1b.svg",
+      "static/media/discussion.ee0dd12e.svg",
+      "static/media/security.72d2fe61.svg",
+      "static/media/group.7d14cc39.svg",
+      "static/media/user.63c6b894.svg",
+      "static/media/add-on.5e36c5f7.svg",
+      "static/media/settings.616c8224.svg",
+      "static/media/undo-control-panel.a4f6d739.svg",
+      "static/media/ahead.d7698530.svg",
+      "static/media/description.981dc40b.svg",
+      "static/media/text.e02a93fe.svg",
+      "static/media/camera.448f7e56.svg",
+      "static/media/videocamera.ac660e95.svg",
+      "static/media/globe.ef4c6653.svg",
+      "static/media/content-listing.6e48139f.svg",
+      "static/media/list-bullet.85a7f948.svg",
+      "static/media/grid-block.91c7e57c.svg",
+      "static/media/images.f7c31220.svg",
+      "static/media/clear.8a096e76.svg",
+      "static/media/default-image.9451b251.svg",
+      "static/media/block-image.8a4a14d5.svg",
+      "static/media/upload.fa4c91ea.svg",
+      "static/media/open.1d47e077.svg",
+      "static/media/back.da8faea3.svg",
+      "static/media/block-video.832fa3ff.svg",
+      "static/media/block-maps.731e84f6.svg",
+      "static/media/show.cdbc344b.svg",
+      "static/media/indent.7cf71394.svg",
+      "static/media/left-key.0f88b754.svg",
+      "static/media/right-key.8d1aa1ea.svg",
+      "static/media/play.c7acb63f.svg",
+      "static/media/pause.6c291c45.svg",
+      "static/media/fullscreen.bbfae1dc.svg",
+      "static/media/back-down.f190e510.svg",
+      "static/media/grid-1.f89d5f8b.svg",
+      "static/media/grid-2.4068e674.svg",
+      "static/media/grid-3.19cf9f8d.svg",
+      "static/media/grid-4.2b07a173.svg",
+      "static/media/home.a3aef26f.svg",
+      "static/media/save.89836d2d.svg",
+      "static/media/delete.5110078a.svg",
+      "static/media/add.ac81d5ba.svg",
+      "static/media/up-key.7b24027b.svg",
+      "static/media/down-key.9bda307f.svg",
+      "static/media/image-left.98b59864.svg",
+      "static/media/image-right.d019c29a.svg",
+      "static/media/image-fit.77035f56.svg",
+      "static/media/image-wide.b775fe57.svg",
+      "static/media/image-full.54f88ffe.svg",
+      "static/media/ready.10792faa.svg",
+      "static/media/info.ddcce1bb.svg",
+      "static/media/error.54aaafc6.svg",
+      "static/media/warning.65582d1a.svg",
+      "static/media/sort-up.31d9d425.svg",
+      "static/media/sort-down.836fb99a.svg",
+      "static/media/reload.aa766fdd.svg",
+      "static/media/unlink.040cec53.svg",
+      "static/media/Logo.16e25cdf.svg",
+      "static/media/circle-plus.3d5924e5.svg",
+      "static/media/check.9526e437.svg",
+      "static/media/check-blank.a523d512.svg",
+      "static/media/apps.9cf91b5b.svg",
+      "static/media/configuration.735484ae.svg",
+      "static/media/pen.33b456cc.svg",
+      "static/media/unlock.e2356b7a.svg",
+      "static/media/add-document.498cfe6e.svg",
+      "static/media/more.a134f876.svg",
+      "static/media/forbidden.a0bfe1cc.svg",
+      "static/media/translate.78271d4a.svg",
+      "static/media/circle-dismiss.2e0becaf.svg",
+      "static/media/log-out.8671f66f.svg",
+      "static/media/subtext.40c0c08f.svg",
+      "static/media/table.0c8c5812.svg",
+      "static/media/flags.9c74e172.png",
+      "static/media/icons.dbc1ef8b.eot",
+      "static/media/icons.df45b7de.woff",
+      "static/media/icons.06400145.ttf",
+      "static/media/icons.022583c4.svg",
+      "static/media/Poppins-RegularItalic-devanagari.ba7c820d.woff2",
+      "static/media/Poppins-RegularItalic-latinext.efd6a6a1.woff2",
+      "static/media/Poppins-RegularItalic-latin.a242ba0d.woff2",
+      "static/media/Poppins-BoldItalic-devanagari.17352fe0.woff2",
+      "static/media/Poppins-BoldItalic-latinext.34ad495c.woff2",
+      "static/media/Poppins-BoldItalic-latin.858549c2.woff2",
+      "static/media/Poppins-Light-devanagari.dc820d9f.woff2",
+      "static/media/Poppins-Light-latinext.6731e1ba.woff2",
+      "static/media/Poppins-Light-latin.8d91ec1c.woff2",
+      "static/media/Poppins-Regular-devanagari.790d0c8d.woff2",
+      "static/media/Poppins-Regular-latinext.0ed299a4.woff2",
+      "static/media/Poppins-Regular-latin.9212f6f9.woff2",
+      "static/media/Poppins-Semibold-devanagari.79e6e81d.woff2",
+      "static/media/Poppins-Semibold-latinext.a6ff41d1.woff2",
+      "static/media/Poppins-Semibold-latin.a09f2fcc.woff2",
+      "static/media/Poppins-Bold-devanagari.7def222d.woff2",
+      "static/media/Poppins-Bold-latinext.96b6d546.woff2",
+      "static/media/Poppins-Bold-latin.25b0e113.woff2",
+      "static/media/bold.dcf91fd5.svg",
+      "static/media/format-clear.f3792997.svg",
+      "static/media/heading.fb35a822.svg",
+      "static/media/italic.b9ca447f.svg",
+      "static/media/list-numbered.db0ca3d1.svg",
+      "static/media/subheading.e6b99d8a.svg",
+      "static/media/underline.a3d67623.svg",
+      "static/media/strikethrough.7f54e527.svg",
+      "static/media/subindex.2899b792.svg",
+      "static/media/superindex.0c3a8b35.svg",
+      "static/media/row-before.94de1b93.svg",
+      "static/media/row-after.f18383dd.svg",
+      "static/media/column-before.da184eda.svg",
+      "static/media/column-after.0def2a4a.svg",
+      "static/media/row-delete.c958d1e3.svg",
+      "static/media/column-delete.61fcc2eb.svg",
+      "static/media/quote.b5857ad5.svg",
+      "static/media/paint.8ff9a5ab.svg",
+      "static/js/client.js.map"
+    ],
+    "runtime~client": [
+      "static/js/runtime~client.js",
+      "static/js/runtime~client.js.map"
+    ],
+    "Form": [
+      "static/js/Form.chunk.js",
+      "static/media/drag.c428b057.svg",
+      "static/media/copy.8e592807.svg",
+      "static/media/cut.bb8862ff.svg",
+      "static/media/paste.4a1fddf6.svg",
+      "static/media/undo.d0fa9115.svg",
+      "static/media/redo.b25d5210.svg",
+      "static/js/Form.chunk.js.map"
+    ],
+    "Widgets": [
+      "static/js/Widgets.chunk.js",
+      "static/media/drag.c428b057.svg",
+      "static/media/blank.0f85be1c.svg",
+      "static/media/image-narrow.2f8dc819.svg",
+      "static/js/Widgets.chunk.js.map"
+    ],
+    "Contents": [
+      "static/js/Contents.chunk.js",
+      "static/media/drag.c428b057.svg",
+      "static/media/copy.8e592807.svg",
+      "static/media/cut.bb8862ff.svg",
+      "static/media/paste.4a1fddf6.svg",
+      "static/media/checkbox-unchecked.fca312f6.svg",
+      "static/media/checkbox-checked.2197263d.svg",
+      "static/media/move-up.72a42e34.svg",
+      "static/media/move-down.7706c949.svg",
+      "static/media/tag.36bab3e8.svg",
+      "static/media/rename.91ea7d36.svg",
+      "static/media/semaphore.44d1a2ac.svg",
+      "static/media/properties.320f5ea4.svg",
+      "static/media/checkbox-indeterminate.a9e250a1.svg",
+      "static/media/configuration-app.9c74f587.svg",
+      "static/js/Contents.chunk.js.map"
+    ],
+    "Controlpanels": [
+      "static/js/Controlpanels.chunk.js",
+      "static/js/Controlpanels.chunk.js.map"
+    ],
+    "RulesControlpanel": [
+      "static/js/RulesControlpanel.chunk.js",
+      "static/media/up.0c346ab8.svg",
+      "static/media/down.dde5dafc.svg",
+      "static/js/RulesControlpanel.chunk.js.map"
+    ],
+    "UsersControlpanel": [
+      "static/js/UsersControlpanel.chunk.js",
+      "static/media/plone.9a6c7686.svg",
+      "static/media/add-user.b8bba572.svg",
+      "static/js/UsersControlpanel.chunk.js.map"
+    ],
+    "GroupsControlpanel": [
+      "static/js/GroupsControlpanel.chunk.js",
+      "static/media/plone.9a6c7686.svg",
+      "static/media/add-user.b8bba572.svg",
+      "static/js/GroupsControlpanel.chunk.js.map"
+    ],
+    "ContentTypesControlpanel": [
+      "static/js/ContentTypesControlpanel.chunk.js",
+      "static/js/ContentTypesControlpanel.chunk.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "static/js/client.js",
+      "size": 15023340,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/client.js.map"
+        }
+      },
+      "chunkNames": [
+        "client"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "client"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/Widgets.chunk.js",
+      "size": 916063,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/Widgets.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "Widgets"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Widgets"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-dates_index_js.chunk.js",
+      "size": 894556,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-dates_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-dates_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-virtualized_dist_commonjs_index_js.chunk.js",
+      "size": 477044,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-virtualized_dist_commonjs_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-virtualized_dist_commonjs_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-select-async-paginate_es_index_js.chunk.js",
+      "size": 429494,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-select-async-paginate_es_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-select-async-paginate_es_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/Form.chunk.js",
+      "size": 386451,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/Form.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "Form"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Form"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/Contents.chunk.js",
+      "size": 365847,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/Contents.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "Contents"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Contents"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js.chunk.js",
+      "size": 356456,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-select_async-creatable_dist_react-select_esm_js.chunk.js",
+      "size": 351283,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-select_async-creatable_dist_react-select_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-select_async-creatable_dist_react-select_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_rc-time-picker_es_index_js.chunk.js",
+      "size": 341371,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_rc-time-picker_es_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_rc-time-picker_es_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-select_async_dist_react-select_esm_js.chunk.js",
+      "size": 336124,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-select_async_dist_react-select_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-select_async_dist_react-select_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-select_creatable_dist_react-select_esm_js.chunk.js",
+      "size": 335467,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-select_creatable_dist_react-select_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-select_creatable_dist_react-select_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-select_dist_react-select_esm_js.chunk.js",
+      "size": 331364,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-select_dist_react-select_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-select_dist_react-select_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/icons.022583c4.svg",
+      "size": 199380,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_diff_dist_diff_js.chunk.js",
+      "size": 186909,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_diff_dist_diff_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_diff_dist_diff_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/RulesControlpanel.chunk.js",
+      "size": 184730,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/RulesControlpanel.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "RulesControlpanel"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "RulesControlpanel"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_rrule_dist_esm_index_js.chunk.js",
+      "size": 166637,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_rrule_dist_esm_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_rrule_dist_esm_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_dnd-kit_sortable_dist_sortable_esm_js.chunk.js",
+      "size": 150470,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_dnd-kit_sortable_dist_sortable_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_dnd-kit_sortable_dist_sortable_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_prettier_plugins_html_mjs.chunk.js",
+      "size": 146515,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_prettier_plugins_html_mjs.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_prettier_plugins_html_mjs"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/ContentTypesControlpanel.chunk.js",
+      "size": 131915,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/ContentTypesControlpanel.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "ContentTypesControlpanel"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "ContentTypesControlpanel"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-dnd_lib_index_js.chunk.js",
+      "size": 128429,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-dnd_lib_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-dnd_lib_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_dnd-kit_core_dist_core_esm_js.chunk.js",
+      "size": 127231,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_dnd-kit_core_dist_core_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_dnd-kit_core_dist_core_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/UsersControlpanel.chunk.js",
+      "size": 105215,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/UsersControlpanel.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "UsersControlpanel"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "UsersControlpanel"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx.chunk.js",
+      "size": 101529,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/GroupsControlpanel.chunk.js",
+      "size": 95059,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/GroupsControlpanel.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "GroupsControlpanel"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "GroupsControlpanel"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx.chunk.js",
+      "size": 79308,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_prettier_standalone_mjs.chunk.js",
+      "size": 77668,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_prettier_standalone_mjs.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_prettier_standalone_mjs"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js.chunk.js",
+      "size": 72238,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/Controlpanels.chunk.js",
+      "size": 64172,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/Controlpanels.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "Controlpanels"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Controlpanels"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb.chunk.js",
+      "size": 60941,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Rules_Rules_jsx.chunk.js",
+      "size": 54946,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Rules_Rules_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Rules_Rules_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/icons.dbc1ef8b.eot",
+      "size": 54884,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/icons.df45b7de.woff",
+      "size": 54804,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/icons.06400145.ttf",
+      "size": 54728,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/runtime~client.js",
+      "size": 52814,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/runtime~client.js.map"
+        }
+      },
+      "chunkNames": [
+        "runtime~client"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "runtime~client"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-image-gallery_build_image-gallery_js.chunk.js",
+      "size": 49975,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-image-gallery_build_image-gallery_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-image-gallery_build_image-gallery_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-dnd-html5-backend_lib_index_js.chunk.js",
+      "size": 48355,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-dnd-html5-backend_lib_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-dnd-html5-backend_lib_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-RegularItalic-devanagari.ba7c820d.woff2",
+      "size": 45816,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx.chunk.js",
+      "size": 45805,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-BoldItalic-devanagari.17352fe0.woff2",
+      "size": 44992,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx.chunk.js",
+      "size": 44398,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Regular-devanagari.790d0c8d.woff2",
+      "size": 39564,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Light-devanagari.dc820d9f.woff2",
+      "size": 39476,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Bold-devanagari.7def222d.woff2",
+      "size": 39148,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Semibold-devanagari.79e6e81d.woff2",
+      "size": 39136,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_prismjs_components_prism-core_js.chunk.js",
+      "size": 38988,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_prismjs_components_prism-core_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_prismjs_components_prism-core_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_theme_View_EventView_jsx.chunk.js",
+      "size": 32752,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_theme_View_EventView_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_theme_View_EventView_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx.chunk.js",
+      "size": 32491,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx.chunk.js",
+      "size": 31980,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx.chunk.js",
+      "size": 29369,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/flags.9c74e172.png",
+      "size": 28123,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_react-simple-code-editor_lib_index_js.chunk.js",
+      "size": 20891,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_react-simple-code-editor_lib_index_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_react-simple-code-editor_lib_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx.chunk.js",
+      "size": 19698,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_dnd-kit_utilities_dist_utilities_esm_js.chunk.js",
+      "size": 10979,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_dnd-kit_utilities_dist_utilities_esm_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_dnd-kit_utilities_dist_utilities_esm_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-RegularItalic-latin.a242ba0d.woff2",
+      "size": 8668,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-BoldItalic-latin.858549c2.woff2",
+      "size": 8596,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Regular-latin.9212f6f9.woff2",
+      "size": 7884,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Light-latin.8d91ec1c.woff2",
+      "size": 7840,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Bold-latin.25b0e113.woff2",
+      "size": 7816,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Semibold-latin.a09f2fcc.woff2",
+      "size": 7748,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx.chunk.js",
+      "size": 6198,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-RegularItalic-latinext.efd6a6a1.woff2",
+      "size": 5872,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-BoldItalic-latinext.34ad495c.woff2",
+      "size": 5832,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Regular-latinext.0ed299a4.woff2",
+      "size": 5544,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Semibold-latinext.a6ff41d1.woff2",
+      "size": 5452,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Light-latinext.6731e1ba.woff2",
+      "size": 5428,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Poppins-Bold-latinext.96b6d546.woff2",
+      "size": 5384,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/node_modules_prismjs_components_prism-markup_js.chunk.js",
+      "size": 5241,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/node_modules_prismjs_components_prism-markup_js.chunk.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "node_modules_prismjs_components_prism-markup_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/block-maps.731e84f6.svg",
+      "size": 3848,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/Logo.16e25cdf.svg",
+      "size": 3754,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/list-numbered.db0ca3d1.svg",
+      "size": 3124,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/group.7d14cc39.svg",
+      "size": 2776,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/globe.ef4c6653.svg",
+      "size": 2691,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/configuration.735484ae.svg",
+      "size": 2240,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/unlink.040cec53.svg",
+      "size": 2083,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/link.ab502a5f.svg",
+      "size": 1980,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/configuration-app.9c74f587.svg",
+      "size": 1962,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/add-user.b8bba572.svg",
+      "size": 1956,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "GroupsControlpanel",
+        "UsersControlpanel"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "GroupsControlpanel",
+        "UsersControlpanel"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/world.02d595ce.svg",
+      "size": 1866,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/user.63c6b894.svg",
+      "size": 1859,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/calendar.bdcf184c.svg",
+      "size": 1653,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/undo-control-panel.a4f6d739.svg",
+      "size": 1596,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/drag.c428b057.svg",
+      "size": 1418,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents",
+        "Form",
+        "Widgets"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents",
+        "Form",
+        "Widgets"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/upload.fa4c91ea.svg",
+      "size": 1339,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/add-on.5e36c5f7.svg",
+      "size": 1310,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/paint.8ff9a5ab.svg",
+      "size": 1234,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/tag.36bab3e8.svg",
+      "size": 1114,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/show.cdbc344b.svg",
+      "size": 1076,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/nav.ba27d9b5.svg",
+      "size": 1072,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/strikethrough.7f54e527.svg",
+      "size": 1053,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/semaphore.44d1a2ac.svg",
+      "size": 1020,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/translate.78271d4a.svg",
+      "size": 978,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/settings.616c8224.svg",
+      "size": 973,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/discussion.ee0dd12e.svg",
+      "size": 904,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/camera.448f7e56.svg",
+      "size": 866,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/log-out.8671f66f.svg",
+      "size": 858,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/plone.9a6c7686.svg",
+      "size": 829,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "GroupsControlpanel",
+        "UsersControlpanel"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "GroupsControlpanel",
+        "UsersControlpanel"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/language.2a82bd9e.svg",
+      "size": 826,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/megaphone.15b111bf.svg",
+      "size": 796,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/help.53b167be.svg",
+      "size": 789,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/more.a134f876.svg",
+      "size": 783,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/cut.bb8862ff.svg",
+      "size": 782,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents",
+        "Form"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents",
+        "Form"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/unlock.e2356b7a.svg",
+      "size": 744,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/copy.8e592807.svg",
+      "size": 740,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents",
+        "Form"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents",
+        "Form"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/block-video.832fa3ff.svg",
+      "size": 718,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/editing.db56fb9e.svg",
+      "size": 718,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/pen.33b456cc.svg",
+      "size": 693,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/subindex.2899b792.svg",
+      "size": 686,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/apps.9cf91b5b.svg",
+      "size": 669,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/superindex.0c3a8b35.svg",
+      "size": 665,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/list-bullet.85a7f948.svg",
+      "size": 655,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/content.a5cc3481.svg",
+      "size": 652,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/table.0c8c5812.svg",
+      "size": 648,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/rename.91ea7d36.svg",
+      "size": 624,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/default-image.9451b251.svg",
+      "size": 614,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/reload.aa766fdd.svg",
+      "size": 613,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/info.ddcce1bb.svg",
+      "size": 594,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/page.665812f5.svg",
+      "size": 565,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/delete.5110078a.svg",
+      "size": 554,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/properties.320f5ea4.svg",
+      "size": 549,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/save.89836d2d.svg",
+      "size": 548,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/circle-dismiss.2e0becaf.svg",
+      "size": 529,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/content-existing.dc4270f9.svg",
+      "size": 520,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/add-document.498cfe6e.svg",
+      "size": 517,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/back-down.f190e510.svg",
+      "size": 516,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/redo.b25d5210.svg",
+      "size": 515,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Form"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Form"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/bold.dcf91fd5.svg",
+      "size": 511,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/content-listing.6e48139f.svg",
+      "size": 504,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/open.1d47e077.svg",
+      "size": 503,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/code.50079f1b.svg",
+      "size": 491,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-full.54f88ffe.svg",
+      "size": 482,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/error.54aaafc6.svg",
+      "size": 481,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-right.d019c29a.svg",
+      "size": 480,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-left.98b59864.svg",
+      "size": 479,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/images.f7c31220.svg",
+      "size": 477,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/format-clear.f3792997.svg",
+      "size": 472,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/warning.65582d1a.svg",
+      "size": 459,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/paste.4a1fddf6.svg",
+      "size": 458,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents",
+        "Form"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents",
+        "Form"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/forbidden.a0bfe1cc.svg",
+      "size": 454,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/circle-bottom.bbdfe451.svg",
+      "size": 453,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/circle-top.80973a62.svg",
+      "size": 453,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/ready.10792faa.svg",
+      "size": 453,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/indent.7cf71394.svg",
+      "size": 451,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/circle-plus.3d5924e5.svg",
+      "size": 445,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/zoom.3b262a3d.svg",
+      "size": 444,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/column-before.da184eda.svg",
+      "size": 441,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/grid-block.91c7e57c.svg",
+      "size": 437,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/grid-4.2b07a173.svg",
+      "size": 432,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/column-after.0def2a4a.svg",
+      "size": 431,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/quote.b5857ad5.svg",
+      "size": 429,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/row-before.94de1b93.svg",
+      "size": 429,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/block-image.8a4a14d5.svg",
+      "size": 428,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/row-after.f18383dd.svg",
+      "size": 411,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/file.4cbd8a91.svg",
+      "size": 406,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image.2716077d.svg",
+      "size": 400,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/grid-3.19cf9f8d.svg",
+      "size": 388,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/sort-up.31d9d425.svg",
+      "size": 385,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/email.235dfba1.svg",
+      "size": 384,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/sort-down.836fb99a.svg",
+      "size": 384,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/underline.a3d67623.svg",
+      "size": 379,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/column-delete.61fcc2eb.svg",
+      "size": 376,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/row-delete.c958d1e3.svg",
+      "size": 376,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/security.72d2fe61.svg",
+      "size": 370,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/videocamera.ac660e95.svg",
+      "size": 369,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/folder.7139bb4a.svg",
+      "size": 358,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/undo.d0fa9115.svg",
+      "size": 354,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Form"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Form",
+        "node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/fullscreen.bbfae1dc.svg",
+      "size": 353,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/grid-2.4068e674.svg",
+      "size": 344,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-fit.77035f56.svg",
+      "size": 343,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-wide.b775fe57.svg",
+      "size": 343,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/image-narrow.2f8dc819.svg",
+      "size": 341,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Widgets"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Widgets"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/home.a3aef26f.svg",
+      "size": 338,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/subheading.e6b99d8a.svg",
+      "size": 330,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/move-down.7706c949.svg",
+      "size": 328,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/move-up.72a42e34.svg",
+      "size": 326,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/heading.fb35a822.svg",
+      "size": 325,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/checkbox-checked.2197263d.svg",
+      "size": 323,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/check-blank.a523d512.svg",
+      "size": 313,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/blank.0f85be1c.svg",
+      "size": 301,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Widgets"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Widgets"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/check.9526e437.svg",
+      "size": 296,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/js/locales_en_json.chunk.js",
+      "size": 288,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "locales_en_json"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/media/grid-1.f89d5f8b.svg",
+      "size": 282,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/checkbox-indeterminate.a9e250a1.svg",
+      "size": 272,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/clear.8a096e76.svg",
+      "size": 269,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/pause.6c291c45.svg",
+      "size": 261,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/subtext.40c0c08f.svg",
+      "size": 249,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/text.e02a93fe.svg",
+      "size": 239,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/ahead.d7698530.svg",
+      "size": 227,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/down.dde5dafc.svg",
+      "size": 227,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "RulesControlpanel"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "RulesControlpanel"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/back.da8faea3.svg",
+      "size": 226,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/up.0c346ab8.svg",
+      "size": 226,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "RulesControlpanel"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "RulesControlpanel"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/description.981dc40b.svg",
+      "size": 218,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/italic.b9ca447f.svg",
+      "size": 215,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/checkbox-unchecked.fca312f6.svg",
+      "size": 209,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "Contents"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "Contents"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/down-key.9bda307f.svg",
+      "size": 208,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/left-key.0f88b754.svg",
+      "size": 208,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/right-key.8d1aa1ea.svg",
+      "size": 208,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/up-key.7b24027b.svg",
+      "size": 208,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/play.c7acb63f.svg",
+      "size": 205,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/media/add.ac81d5ba.svg",
+      "size": 201,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "client"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "client"
+      ]
+    }
+  ],
+  "namedChunkGroups": {
+    "client": {
+      "name": "client",
+      "chunks": [
+        "runtime~client",
+        "client"
+      ],
+      "assets": [
+        {
+          "name": "static/js/runtime~client.js"
+        },
+        {
+          "name": "static/js/client.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 131,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Form": {
+      "name": "Form",
+      "chunks": [
+        "Form"
+      ],
+      "assets": [
+        {
+          "name": "static/js/Form.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 7,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Widgets": {
+      "name": "Widgets",
+      "chunks": [
+        "Widgets"
+      ],
+      "assets": [
+        {
+          "name": "static/js/Widgets.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 4,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Contents": {
+      "name": "Contents",
+      "chunks": [
+        "Contents"
+      ],
+      "assets": [
+        {
+          "name": "static/js/Contents.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 15,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Controlpanels": {
+      "name": "Controlpanels",
+      "chunks": [
+        "Controlpanels"
+      ],
+      "assets": [
+        {
+          "name": "static/js/Controlpanels.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "RulesControlpanel": {
+      "name": "RulesControlpanel",
+      "chunks": [
+        "RulesControlpanel"
+      ],
+      "assets": [
+        {
+          "name": "static/js/RulesControlpanel.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "UsersControlpanel": {
+      "name": "UsersControlpanel",
+      "chunks": [
+        "UsersControlpanel"
+      ],
+      "assets": [
+        {
+          "name": "static/js/UsersControlpanel.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "GroupsControlpanel": {
+      "name": "GroupsControlpanel",
+      "chunks": [
+        "GroupsControlpanel"
+      ],
+      "assets": [
+        {
+          "name": "static/js/GroupsControlpanel.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "ContentTypesControlpanel": {
+      "name": "ContentTypesControlpanel",
+      "chunks": [
+        "ContentTypesControlpanel"
+      ],
+      "assets": [
+        {
+          "name": "static/js/ContentTypesControlpanel.chunk.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "client",
+      "files": [
+        "static/js/client.js"
+      ]
+    },
+    {
+      "id": "runtime~client",
+      "files": [
+        "static/js/runtime~client.js"
+      ]
+    },
+    {
+      "id": "node_modules_prettier_standalone_mjs",
+      "files": [
+        "static/js/node_modules_prettier_standalone_mjs.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_prettier_plugins_html_mjs",
+      "files": [
+        "static/js/node_modules_prettier_plugins_html_mjs.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_prismjs_components_prism-core_js",
+      "files": [
+        "static/js/node_modules_prismjs_components_prism-core_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-select_dist_react-select_esm_js",
+      "files": [
+        "static/js/node_modules_react-select_dist_react-select_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-virtualized_dist_commonjs_index_js",
+      "files": [
+        "static/js/node_modules_react-virtualized_dist_commonjs_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js",
+      "files": [
+        "static/js/node_modules_react-sortable-hoc_dist_react-sortable-hoc_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-select-async-paginate_es_index_js",
+      "files": [
+        "static/js/node_modules_react-select-async-paginate_es_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-select_async_dist_react-select_esm_js",
+      "files": [
+        "static/js/node_modules_react-select_async_dist_react-select_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-select_creatable_dist_react-select_esm_js",
+      "files": [
+        "static/js/node_modules_react-select_creatable_dist_react-select_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-select_async-creatable_dist_react-select_esm_js",
+      "files": [
+        "static/js/node_modules_react-select_async-creatable_dist_react-select_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_diff_dist_diff_js",
+      "files": [
+        "static/js/node_modules_diff_dist_diff_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-dates_index_js",
+      "files": [
+        "static/js/node_modules_react-dates_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-dnd_lib_index_js",
+      "files": [
+        "static/js/node_modules_react-dnd_lib_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-dnd-html5-backend_lib_index_js",
+      "files": [
+        "static/js/node_modules_react-dnd-html5-backend_lib_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js",
+      "files": [
+        "static/js/node_modules_react-beautiful-dnd_dist_react-beautiful-dnd_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_rrule_dist_esm_index_js",
+      "files": [
+        "static/js/node_modules_rrule_dist_esm_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_dnd-kit_core_dist_core_esm_js",
+      "files": [
+        "static/js/node_modules_dnd-kit_core_dist_core_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_dnd-kit_sortable_dist_sortable_esm_js",
+      "files": [
+        "static/js/node_modules_dnd-kit_sortable_dist_sortable_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_dnd-kit_utilities_dist_utilities_esm_js",
+      "files": [
+        "static/js/node_modules_dnd-kit_utilities_dist_utilities_esm_js.chunk.js"
+      ]
+    },
+    {
+      "id": "Form",
+      "files": [
+        "static/js/Form.chunk.js"
+      ]
+    },
+    {
+      "id": "Widgets",
+      "files": [
+        "static/js/Widgets.chunk.js"
+      ]
+    },
+    {
+      "id": "locales_en_json",
+      "files": [
+        "static/js/locales_en_json.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_theme_View_EventView_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_theme_View_EventView_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-simple-code-editor_lib_index_js",
+      "files": [
+        "static/js/node_modules_react-simple-code-editor_lib_index_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_prismjs_components_prism-markup_js",
+      "files": [
+        "static/js/node_modules_prismjs_components_prism-markup_js.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_react-image-gallery_build_image-gallery_js",
+      "files": [
+        "static/js/node_modules_react-image-gallery_build_image-gallery_js.chunk.js"
+      ]
+    },
+    {
+      "id": "Contents",
+      "files": [
+        "static/js/Contents.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Rules_Rules_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Rules_Rules_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "Controlpanels",
+      "files": [
+        "static/js/Controlpanels.chunk.js"
+      ]
+    },
+    {
+      "id": "RulesControlpanel",
+      "files": [
+        "static/js/RulesControlpanel.chunk.js"
+      ]
+    },
+    {
+      "id": "UsersControlpanel",
+      "files": [
+        "static/js/UsersControlpanel.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Users_UserGroupMembershipControl-5852fb.chunk.js"
+      ]
+    },
+    {
+      "id": "GroupsControlpanel",
+      "files": [
+        "static/js/GroupsControlpanel.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Relations_Relations_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_Aliases_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UndoControlpanel_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_AddonsControlpanel_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "ContentTypesControlpanel",
+      "files": [
+        "static/js/ContentTypesControlpanel.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_VersionOverview_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_UpgradeControlPanel_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_ModerateComments_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_manage_Controlpanels_DatabaseInformation_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx",
+      "files": [
+        "static/js/node_modules_plone_volto_src_components_theme_Comments_CommentEditModal_jsx.chunk.js"
+      ]
+    },
+    {
+      "id": "node_modules_rc-time-picker_es_index_js",
+      "files": [
+        "static/js/node_modules_rc-time-picker_es_index_js.chunk.js"
+      ]
+    }
+  ]
+}
