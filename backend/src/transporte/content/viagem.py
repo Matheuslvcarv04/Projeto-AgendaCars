@@ -9,6 +9,7 @@ from z3c.relationfield.schema import RelationChoice
 
 from plone.app.vocabularies.catalog import CatalogSource
 from plone.supermodel import model
+from zope.lifecycleevent.interfaces import IObjectAddedEvent
 
 
 class IViagem(model.Schema):
@@ -84,6 +85,14 @@ class IViagem(model.Schema):
             )
         if data.km_chegada < data.km_saida:
             raise Invalid("A quilometragem de chegada não pode ser menor que a saída.")
+
+
+@adapter(IViagem, IObjectAddedEvent)
+def atribuir_proprietario(viagem, event):
+    """Permite ao solicitante consultar a viagem originada por seu pedido."""
+    from transporte.security import atribuir_proprietario_viagem
+
+    atribuir_proprietario_viagem(viagem, event)
 
 
 @adapter(IViagem, IObjectModifiedEvent)

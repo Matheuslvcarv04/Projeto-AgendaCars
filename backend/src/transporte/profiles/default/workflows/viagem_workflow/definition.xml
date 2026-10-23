@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dc-workflow workflow_id="viagem_workflow"
+             title="Viagem restrita"
+             description="Restringe cada viagem ao solicitante, motorista designado e administrador."
+             state_variable="review_state"
+             initial_state="restrita">
+  <state state_id="restrita" title="Restrita">
+    <permission-map name="View" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Administrador</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>MotoristaAtribuido</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Administrador</permission-role>
+    </permission-map>
+    <permission-map name="Update checklist" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Administrador</permission-role>
+      <permission-role>MotoristaAtribuido</permission-role>
+    </permission-map>
+  </state>
+</dc-workflow>

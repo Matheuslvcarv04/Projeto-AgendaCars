@@ -1,9 +1,9 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-16236-b93CzhbPox1i-.js"
+/***/ "../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-17340-H09NlTUDX5Dx-.js"
 /*!******************************************************************************!*\
-  !*** ../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-16236-b93CzhbPox1i-.js ***!
+  !*** ../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-17340-H09NlTUDX5Dx-.js ***!
   \******************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -57460,7 +57460,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ContentIcons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ContentIcons */ "./node_modules/@plone/volto/src/config/ContentIcons.jsx");
 /* harmony import */ var _Style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Style */ "./node_modules/@plone/volto/src/config/Style.jsx");
 /* harmony import */ var _ControlPanels__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ControlPanels */ "./node_modules/@plone/volto/src/config/ControlPanels.js");
-/* harmony import */ var load_volto_addons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! load-volto-addons */ "../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-16236-b93CzhbPox1i-.js");
+/* harmony import */ var load_volto_addons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! load-volto-addons */ "../../../../MATHEU~1.LCA/AppData/Local/Temp/tmp-17340-H09NlTUDX5Dx-.js");
 /* harmony import */ var _Components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Components */ "./node_modules/@plone/volto/src/config/Components.jsx");
 /* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Widgets */ "./node_modules/@plone/volto/src/config/Widgets.jsx");
 /* harmony import */ var _Views__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Views */ "./node_modules/@plone/volto/src/config/Views.jsx");
@@ -73680,18 +73680,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   CREATE_SOLICITACAO: () => (/* binding */ CREATE_SOLICITACAO),
 /* harmony export */   LOAD_ABASTECIMENTOS: () => (/* binding */ LOAD_ABASTECIMENTOS),
 /* harmony export */   LOAD_DISPONIBILIDADE: () => (/* binding */ LOAD_DISPONIBILIDADE),
+/* harmony export */   LOAD_MINHAS_SOLICITACOES: () => (/* binding */ LOAD_MINHAS_SOLICITACOES),
+/* harmony export */   LOAD_MOTORISTAS: () => (/* binding */ LOAD_MOTORISTAS),
 /* harmony export */   LOAD_PAINEL: () => (/* binding */ LOAD_PAINEL),
 /* harmony export */   LOAD_RELATORIO_MENSAL: () => (/* binding */ LOAD_RELATORIO_MENSAL),
 /* harmony export */   LOAD_SOLICITACOES: () => (/* binding */ LOAD_SOLICITACOES),
 /* harmony export */   TRANSITION_SOLICITACAO: () => (/* binding */ TRANSITION_SOLICITACAO),
+/* harmony export */   UPDATE_MOTORISTA: () => (/* binding */ UPDATE_MOTORISTA),
 /* harmony export */   createAbastecimento: () => (/* binding */ createAbastecimento),
 /* harmony export */   createSolicitacao: () => (/* binding */ createSolicitacao),
 /* harmony export */   loadAbastecimentos: () => (/* binding */ loadAbastecimentos),
 /* harmony export */   loadDisponibilidade: () => (/* binding */ loadDisponibilidade),
+/* harmony export */   loadMinhasSolicitacoes: () => (/* binding */ loadMinhasSolicitacoes),
+/* harmony export */   loadMotoristas: () => (/* binding */ loadMotoristas),
 /* harmony export */   loadPainel: () => (/* binding */ loadPainel),
 /* harmony export */   loadRelatorioMensal: () => (/* binding */ loadRelatorioMensal),
 /* harmony export */   loadSolicitacoes: () => (/* binding */ loadSolicitacoes),
-/* harmony export */   transitionSolicitacao: () => (/* binding */ transitionSolicitacao)
+/* harmony export */   transitionSolicitacao: () => (/* binding */ transitionSolicitacao),
+/* harmony export */   updateMotorista: () => (/* binding */ updateMotorista)
 /* harmony export */ });
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -73702,10 +73708,32 @@ const LOAD_DISPONIBILIDADE = 'transporte/LOAD_DISPONIBILIDADE';
 const LOAD_PAINEL = 'transporte/LOAD_PAINEL';
 const LOAD_RELATORIO_MENSAL = 'transporte/LOAD_RELATORIO_MENSAL';
 const LOAD_SOLICITACOES = 'transporte/LOAD_SOLICITACOES';
+const LOAD_MINHAS_SOLICITACOES = 'transporte/LOAD_MINHAS_SOLICITACOES';
 const CREATE_SOLICITACAO = 'transporte/CREATE_SOLICITACAO';
 const TRANSITION_SOLICITACAO = 'transporte/TRANSITION_SOLICITACAO';
 const LOAD_ABASTECIMENTOS = 'transporte/LOAD_ABASTECIMENTOS';
 const CREATE_ABASTECIMENTO = 'transporte/CREATE_ABASTECIMENTO';
+const LOAD_MOTORISTAS = 'transporte/LOAD_MOTORISTAS';
+const UPDATE_MOTORISTA = 'transporte/UPDATE_MOTORISTA';
+function loadMotoristas() {
+  return {
+    type: LOAD_MOTORISTAS,
+    request: {
+      op: 'get',
+      path: '@search?portal_type=Motorista&fullobjects=1&sort_on=sortable_title'
+    }
+  };
+}
+function updateMotorista(url, data) {
+  return {
+    type: UPDATE_MOTORISTA,
+    request: {
+      op: 'patch',
+      path: url,
+      data
+    }
+  };
+}
 function loadAbastecimentos() {
   return {
     type: LOAD_ABASTECIMENTOS,
@@ -73736,6 +73764,15 @@ function loadSolicitacoes() {
     }
   };
 }
+function loadMinhasSolicitacoes() {
+  return {
+    type: LOAD_MINHAS_SOLICITACOES,
+    request: {
+      op: 'get',
+      path: '@search?portal_type=Solicitacao&fullobjects=1&sort_on=created'
+    }
+  };
+}
 function createSolicitacao(data) {
   return {
     type: CREATE_SOLICITACAO,
@@ -73749,11 +73786,13 @@ function createSolicitacao(data) {
   };
 }
 function transitionSolicitacao(url, transition) {
+  const parsedUrl = new URL(url, window.location.origin);
+  const apiUrl = parsedUrl.pathname.includes('/++api++') ? parsedUrl.toString() : `${parsedUrl.origin}/++api++${parsedUrl.pathname}`;
   return {
     type: TRANSITION_SOLICITACAO,
     request: {
       op: 'post',
-      path: `${url}/@workflow`,
+      path: `${apiUrl}/@decidir-solicitacao`,
       data: {
         transition
       }
@@ -73807,8 +73846,8 @@ function updateViagem(url, data) {
   return {
     type: UPDATE_VIAGEM,
     request: {
-      op: 'patch',
-      path: url,
+      op: 'post',
+      path: `${url}/@checklist`,
       data
     }
   };
@@ -73841,6 +73880,99 @@ function loadViagens(data) {
 
 /***/ },
 
+/***/ "./package-volto-transporte/src/components/AccessGuard.jsx"
+/*!*****************************************************************!*\
+  !*** ./package-volto-transporte/src/components/AccessGuard.jsx ***!
+  \*****************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @plone/volto/hooks/user/useUser */ "./node_modules/@plone/volto/src/hooks/user/useUser.js");
+const _excluded = ["component", "roles"];
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\AccessGuard.jsx";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+;
+
+
+
+
+const AccessGuard = _ref => {
+  let {
+      component: Component,
+      roles = []
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  const user = (0,_plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  const authenticated = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.useSelector)(state => {
+    var _state$userSession;
+    return Boolean((_state$userSession = state.userSession) === null || _state$userSession === void 0 ? void 0 : _state$userSession.token);
+  });
+  if (!authenticated) {
+    return __jsx(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Redirect, {
+      to: "/login",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 12
+      }
+    });
+  }
+  if (!user) {
+    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Loader, {
+      active: true,
+      inline: "centered",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15,
+        columnNumber: 12
+      }
+    });
+  }
+  const allowed = roles.length === 0 || roles.some(role => {
+    var _user$roles;
+    return (_user$roles = user.roles) === null || _user$roles === void 0 ? void 0 : _user$roles.includes(role);
+  });
+  if (!allowed) {
+    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+      negative: true,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 12
+      }
+    }, "Voc\xEA n\xE3o tem permiss\xE3o para acessar esta p\xE1gina.");
+  }
+  return __jsx(Component, _extends({}, props, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 10
+    }
+  }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AccessGuard);
+
+/***/ },
+
 /***/ "./package-volto-transporte/src/components/AppShell.jsx"
 /*!**************************************************************!*\
   !*** ./package-volto-transporte/src/components/AppShell.jsx ***!
@@ -73858,244 +73990,300 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @plone/volto/hooks/user/useUser */ "./node_modules/@plone/volto/src/hooks/user/useUser.js");
 var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\AppShell.jsx";
 var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+
+
 
 
 
 const NAV_ITEMS = [{
   path: '/painel',
   label: 'Painel',
-  icon: 'chart bar'
+  icon: 'chart bar',
+  roles: ['Manager', 'Administrador']
 }, {
   path: '/solicitacao',
   label: 'Solicitar viagem',
-  icon: 'file alternate'
+  icon: 'file alternate',
+  authenticated: true
+}, {
+  path: '/minhas-solicitacoes',
+  label: 'Minhas solicitações',
+  icon: 'list',
+  roles: ['Solicitante']
 }, {
   path: '/aprovacao-gestor',
-  label: 'Aprovacoes',
-  icon: 'check circle'
+  label: 'Aprovações',
+  icon: 'check circle',
+  roles: ['Manager', 'Administrador']
 }, {
   path: '/agenda',
   label: 'Agenda',
-  icon: 'calendar alternate'
+  icon: 'calendar alternate',
+  roles: ['Manager', 'Administrador', 'Motorista']
 }, {
   path: '/checklist',
   label: 'Checklist',
-  icon: 'check square'
+  icon: 'check square',
+  roles: ['Manager', 'Administrador', 'Motorista']
 }, {
   path: '/abastecimento',
   label: 'Abastecimento',
-  icon: 'tint'
+  icon: 'tint',
+  roles: ['Manager', 'Administrador', 'Motorista']
+}, {
+  path: '/motoristas',
+  label: 'Motoristas',
+  icon: 'users',
+  roles: ['Manager', 'Administrador']
+}, {
+  path: '/disponibilidade',
+  label: 'Disponibilidade',
+  icon: 'search',
+  roles: ['Manager', 'Administrador']
+}, {
+  path: '/relatorio-mensal',
+  label: 'Relatório mensal',
+  icon: 'file alternate outline',
+  roles: ['Manager', 'Administrador']
 }];
 const AppShell = ({
   activePath,
   title,
   description,
   children
-}) => __jsx("div", {
-  className: "transporte-app-shell",
-  "data-page": activePath,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 3
-  }
-}, __jsx("header", {
-  className: "transporte-topbar",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "transporte-brand",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 7
-  }
-}, __jsx("span", {
-  className: "transporte-brand-mark",
-  "aria-hidden": "true",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 9
-  }
-}, "PR"), __jsx("span", {
-  className: "transporte-brand-copy",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19,
-    columnNumber: 9
-  }
-}, __jsx("strong", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 11
-  }
-}, "Porto do Recife"), __jsx("small", {
+}) => __jsx(AppShellContent, {
+  activePath: activePath,
+  title: title,
+  description: description,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21,
-    columnNumber: 11
+    columnNumber: 3
   }
-}, "Gestao de transporte"))), __jsx("div", {
-  className: "transporte-topbar-status",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 24,
-    columnNumber: 7
-  }
-}, __jsx("span", {
-  className: "transporte-status-dot",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 9
-  }
-}), "Operacao interna")), __jsx("nav", {
-  className: "transporte-nav",
-  "aria-label": "Navegacao principal",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "transporte-nav-inner",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31,
-    columnNumber: 7
-  }
-}, NAV_ITEMS.map(item => __jsx(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-  key: item.path,
-  to: item.path,
-  exact: true,
-  className: "transporte-nav-link",
-  activeClassName: "is-active",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 11
-  }
-}, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-  name: item.icon,
-  "aria-hidden": "true",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 40,
-    columnNumber: 13
-  }
-}), __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 13
-  }
-}, item.label))))), __jsx("main", {
-  className: "transporte-main",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 47,
-    columnNumber: 5
-  }
-}, __jsx("header", {
-  className: "transporte-page-heading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 7
-  }
-}, __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 49,
-    columnNumber: 9
-  }
-}, __jsx("p", {
-  className: "transporte-eyebrow",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 50,
-    columnNumber: 11
-  }
-}, "FROTA INSTITUCIONAL / PORTO DO RECIFE"), __jsx("h1", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 11
-  }
-}, title), description && __jsx("p", {
-  className: "transporte-page-description",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 52,
-    columnNumber: 27
-  }
-}, description)), __jsx("span", {
-  className: "transporte-page-marker",
-  "aria-hidden": "true",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 9
-  }
-}, "PR")), __jsx("div", {
-  className: "transporte-page-content",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 56,
-    columnNumber: 7
-  }
-}, children)), __jsx("footer", {
-  className: "transporte-footer",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 59,
-    columnNumber: 5
-  }
-}, __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 60,
-    columnNumber: 7
-  }
-}, "Porto do Recife"), __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 61,
-    columnNumber: 7
-  }
-}, "Sistema de gestao de transporte")));
+}, children);
+const AppShellContent = ({
+  activePath,
+  title,
+  description,
+  children
+}) => {
+  const user = (0,_plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  const authenticated = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.useSelector)(state => {
+    var _state$userSession;
+    return Boolean((_state$userSession = state.userSession) === null || _state$userSession === void 0 ? void 0 : _state$userSession.token);
+  });
+  const roles = (user === null || user === void 0 ? void 0 : user.roles) || [];
+  const visibleItems = NAV_ITEMS.filter(item => item.authenticated ? authenticated : item.roles.some(role => roles.includes(role)));
+  return __jsx("div", {
+    className: "transporte-app-shell",
+    "data-page": activePath,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 3
+    }
+  }, __jsx("header", {
+    className: "transporte-topbar",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "transporte-brand",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, __jsx("span", {
+    className: "transporte-brand-mark",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 9
+    }
+  }, "PR"), __jsx("span", {
+    className: "transporte-brand-copy",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, "Porto do Recife"), __jsx("small", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }, "Gestao de transporte"))), __jsx("div", {
+    className: "transporte-topbar-status",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 7
+    }
+  }, __jsx("span", {
+    className: "transporte-status-dot",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }), "Operacao interna")), __jsx("nav", {
+    className: "transporte-nav",
+    "aria-label": "Navegacao principal",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "transporte-nav-inner",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 7
+    }
+  }, visibleItems.map(item => __jsx(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    key: item.path,
+    to: item.path,
+    exact: true,
+    className: "transporte-nav-link",
+    activeClassName: "is-active",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
+    name: item.icon,
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 13
+    }
+  }), __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 13
+    }
+  }, item.label))))), __jsx("main", {
+    className: "transporte-main",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 5
+    }
+  }, __jsx("header", {
+    className: "transporte-page-heading",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 9
+    }
+  }, __jsx("p", {
+    className: "transporte-eyebrow",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 11
+    }
+  }, "FROTA INSTITUCIONAL / PORTO DO RECIFE"), __jsx("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 11
+    }
+  }, title), description && __jsx("p", {
+    className: "transporte-page-description",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 27
+    }
+  }, description)), __jsx("span", {
+    className: "transporte-page-marker",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 9
+    }
+  }, "PR")), __jsx("div", {
+    className: "transporte-page-content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 7
+    }
+  }, children)), __jsx("footer", {
+    className: "transporte-footer",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 5
+    }
+  }, __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 7
+    }
+  }, "Porto do Recife"), __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 7
+    }
+  }, "Sistema de gestao de transporte")));
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AppShell);
 
 /***/ },
@@ -74117,8 +74305,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
-/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+/* harmony import */ var _plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @plone/volto/hooks/user/useUser */ "./node_modules/@plone/volto/src/hooks/user/useUser.js");
+/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
+/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
 var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\AbastecimentoForm.jsx";
 var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -74131,7 +74320,9 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
 
 
 
+
 const AbastecimentoForm = () => {
+  var _user$roles;
   const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
   const lista = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => {
     var _state$transporte;
@@ -74141,6 +74332,8 @@ const AbastecimentoForm = () => {
     var _state$transporte2;
     return (_state$transporte2 = state.transporte) === null || _state$transporte2 === void 0 ? void 0 : _state$transporte2.abastecimento;
   });
+  const user = (0,_plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  const canViewHistory = user === null || user === void 0 ? void 0 : (_user$roles = user.roles) === null || _user$roles === void 0 ? void 0 : _user$roles.includes('Manager');
   const {
     0: form,
     1: setForm
@@ -74154,8 +74347,8 @@ const AbastecimentoForm = () => {
     motorista: ''
   });
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadAbastecimentos)());
-  }, [dispatch, status === null || status === void 0 ? void 0 : status.data]);
+    if (canViewHistory) dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_4__.loadAbastecimentos)());
+  }, [dispatch, canViewHistory, status === null || status === void 0 ? void 0 : status.data]);
   const update = field => event => {
     setForm(current => _objectSpread(_objectSpread({}, current), {}, {
       [field]: event.target.value
@@ -74163,21 +74356,21 @@ const AbastecimentoForm = () => {
   };
   const submit = event => {
     event.preventDefault();
-    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.createAbastecimento)(_objectSpread(_objectSpread({}, form), {}, {
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_4__.createAbastecimento)(_objectSpread(_objectSpread({}, form), {}, {
       quilometragem: Number(form.quilometragem),
       litros: Number(form.litros),
       valor: Number(form.valor),
       motorista: form.motorista || undefined
     })));
   };
-  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_5__["default"], {
     activePath: "/abastecimento",
     title: "Abastecimento",
     description: "Registre o consumo de combust\xEDvel e acompanhe o hist\xF3rico da frota.",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 40,
       columnNumber: 5
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
@@ -74187,14 +74380,14 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 45,
       columnNumber: 7
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 46,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form, {
@@ -74202,7 +74395,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 47,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74213,7 +74406,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 48,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74225,7 +74418,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 49,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74238,7 +74431,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 50,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74252,7 +74445,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 51,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74266,7 +74459,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 52,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74277,7 +74470,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 53,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -74287,7 +74480,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 54,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
@@ -74296,7 +74489,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 55,
       columnNumber: 11
     }
   }, "Salvar registro"), (status === null || status === void 0 ? void 0 : status.data) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -74304,7 +74497,7 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 56,
       columnNumber: 28
     }
   }, "Abastecimento registrado."), (status === null || status === void 0 ? void 0 : status.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -74312,16 +74505,16 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 57,
       columnNumber: 29
     }
-  }, "N\xE3o foi poss\xEDvel registrar o abastecimento."))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Header, {
+  }, "N\xE3o foi poss\xEDvel registrar o abastecimento."))), canViewHistory && __jsx((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Header, {
     as: "h3",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 9
+      lineNumber: 62,
+      columnNumber: 13
     }
   }, "Hist\xF3rico"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
     compact: true,
@@ -74329,109 +74522,109 @@ const AbastecimentoForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 9
+      lineNumber: 63,
+      columnNumber: 13
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Header, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 9
+      lineNumber: 64,
+      columnNumber: 15
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 23
+      lineNumber: 64,
+      columnNumber: 29
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 34
+      lineNumber: 64,
+      columnNumber: 40
     }
   }, "Data"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 75
+      lineNumber: 64,
+      columnNumber: 81
     }
   }, "Km"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 114
+      lineNumber: 64,
+      columnNumber: 120
     }
   }, "Litros"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 157
+      lineNumber: 64,
+      columnNumber: 163
     }
   }, "Valor"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 199
+      lineNumber: 64,
+      columnNumber: 205
     }
   }, "Posto"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 9
+      lineNumber: 65,
+      columnNumber: 15
     }
   }, ((lista === null || lista === void 0 ? void 0 : lista.data) || []).map(item => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
     key: item['@id'],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 56
+      lineNumber: 65,
+      columnNumber: 62
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 85
+      lineNumber: 65,
+      columnNumber: 91
     }
   }, item.data), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 121
+      lineNumber: 65,
+      columnNumber: 127
     }
   }, item.quilometragem), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 166
+      lineNumber: 65,
+      columnNumber: 172
     }
   }, item.litros), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 204
+      lineNumber: 65,
+      columnNumber: 210
     }
   }, item.valor), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 241
+      lineNumber: 65,
+      columnNumber: 247
     }
-  }, item.posto)))))));
+  }, item.posto))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AbastecimentoForm);
 
@@ -74515,103 +74708,137 @@ const AgendaView = () => {
       lineNumber: 26,
       columnNumber: 9
     }
-  })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card.Group, {
-    itemsPerRow: 3,
+  })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
+    celled: true,
+    striped: true,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28,
       columnNumber: 7
     }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Header, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 13
+    }
+  }, "Hor\xE1rio"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 13
+    }
+  }, "Ve\xEDculo"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
+    }
+  }, "Motorista"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 13
+    }
+  }, "Destino"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 13
+    }
+  }, "Setor"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 13
+    }
+  }, "Situa\xE7\xE3o"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
   }, agendamentos.map(agenda => {
     var _agenda$veiculo, _agenda$motorista;
-    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card, {
+    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
       key: agenda['@id'],
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 41,
         columnNumber: 11
       }
-    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card.Content, {
+    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 42,
         columnNumber: 13
       }
-    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card.Header, {
+    }, agenda.horario || 'Horário não informado'), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 15
+        lineNumber: 43,
+        columnNumber: 13
       }
-    }, agenda.horario || 'Horário não informado'), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card.Meta, {
+    }, ((_agenda$veiculo = agenda.veiculo) === null || _agenda$veiculo === void 0 ? void 0 : _agenda$veiculo.title) || 'Não atribuído'), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 15
+        lineNumber: 44,
+        columnNumber: 13
       }
-    }, agenda.situacao), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Card.Description, {
+    }, ((_agenda$motorista = agenda.motorista) === null || _agenda$motorista === void 0 ? void 0 : _agenda$motorista.title) || 'Não atribuído'), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 15
+        lineNumber: 45,
+        columnNumber: 13
       }
-    }, __jsx("div", {
+    }, agenda.destino), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 17
+        lineNumber: 46,
+        columnNumber: 13
       }
-    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-      name: "car",
+    }, agenda.setor), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 22
+        lineNumber: 47,
+        columnNumber: 13
       }
-    }), " Ve\xEDculo: ", ((_agenda$veiculo = agenda.veiculo) === null || _agenda$veiculo === void 0 ? void 0 : _agenda$veiculo.title) || 'Não atribuído'), __jsx("div", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 17
-      }
-    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-      name: "user",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 22
-      }
-    }), " Motorista: ", ((_agenda$motorista = agenda.motorista) === null || _agenda$motorista === void 0 ? void 0 : _agenda$motorista.title) || 'Não atribuído'), __jsx("div", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 17
-      }
-    }, "Destino: ", agenda.destino), __jsx("div", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 17
-      }
-    }, "Setor: ", agenda.setor))));
-  })), (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    }, agenda.situacao));
+  }))), (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
     negative: true,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 52,
       columnNumber: 26
     }
   }, "N\xE3o foi poss\xEDvel carregar a agenda.")));
@@ -74653,11 +74880,20 @@ const AprovacaoGestor = () => {
     return (_store$transporte = store.transporte) === null || _store$transporte === void 0 ? void 0 : _store$transporte.solicitacoes;
   });
   const pendentes = (state === null || state === void 0 ? void 0 : state.data) || [];
+  const transition = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte2;
+    return (_store$transporte2 = store.transporte) === null || _store$transporte2 === void 0 ? void 0 : _store$transporte2.transition;
+  });
+  const {
+    0: pendingAction,
+    1: setPendingAction
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadSolicitacoes)());
   }, [dispatch]);
   const decidir = (item, transition) => {
-    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.transitionSolicitacao)(item['@id'], transition)).then(() => dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadSolicitacoes)()));
+    setPendingAction(`${item['@id']}:${transition}`);
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.transitionSolicitacao)(item['@id'], transition)).then(() => dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadSolicitacoes)())).finally(() => setPendingAction(null));
   };
   return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
     activePath: "/aprovacao-gestor",
@@ -74666,7 +74902,7 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 27,
       columnNumber: 5
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
@@ -74676,7 +74912,7 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 32,
       columnNumber: 7
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
@@ -74685,77 +74921,77 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 33,
       columnNumber: 7
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Header, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 34,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 35,
       columnNumber: 11
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 36,
       columnNumber: 13
     }
   }, "N\xFAmero"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 37,
       columnNumber: 13
     }
   }, "Solicitante"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 38,
       columnNumber: 13
     }
   }, "Data/sa\xEDda"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 39,
       columnNumber: 13
     }
   }, "Destino"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 40,
       columnNumber: 13
     }
   }, "Passageiros"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 41,
       columnNumber: 13
     }
   }, "Motivo"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 42,
       columnNumber: 13
     }
   }, "A\xE7\xF5es"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 45,
       columnNumber: 9
     }
   }, pendentes.map(item => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
@@ -74763,49 +74999,49 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 47,
       columnNumber: 13
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 48,
       columnNumber: 15
     }
   }, item.id || item['@id']), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 49,
       columnNumber: 15
     }
   }, item.solicitante), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 50,
       columnNumber: 15
     }
   }, item.data, " ", item.horario_saida), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 51,
       columnNumber: 15
     }
   }, item.destino), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 52,
       columnNumber: 15
     }
   }, item.qtd_passageiros), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 53,
       columnNumber: 15
     }
   }, item.motivo), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
@@ -74813,16 +75049,18 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 54,
       columnNumber: 15
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
     positive: true,
+    disabled: Boolean(pendingAction),
+    loading: pendingAction === `${item['@id']}:aprovar`,
     onClick: () => decidir(item, 'aprovar'),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 55,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
@@ -74830,33 +75068,18 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 75
+      lineNumber: 55,
+      columnNumber: 162
     }
   }), " Aprovar"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
-    color: "yellow",
-    onClick: () => decidir(item, 'alterar'),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 17
-    }
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-    name: "edit",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 81
-    }
-  }), " Alterar"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
     negative: true,
+    disabled: Boolean(pendingAction),
+    loading: pendingAction === `${item['@id']}:recusar`,
     onClick: () => decidir(item, 'recusar'),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 56,
       columnNumber: 17
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Icon, {
@@ -74864,18 +75087,26 @@ const AprovacaoGestor = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 75
+      lineNumber: 56,
+      columnNumber: 162
     }
   }), " Recusar")))))), (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
     negative: true,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 62,
       columnNumber: 26
     }
-  }, "N\xE3o foi poss\xEDvel carregar as solicita\xE7\xF5es.")));
+  }, "N\xE3o foi poss\xEDvel carregar as solicita\xE7\xF5es."), (transition === null || transition === void 0 ? void 0 : transition.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 31
+    }
+  }, transition.error.message || 'Não foi possível concluir a decisão da solicitação.')));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AprovacaoGestor);
 
@@ -74936,8 +75167,7 @@ const ChecklistView = () => {
     estado_geral: '',
     checklist_resultado: 'com_problema',
     km_saida: 0,
-    km_chegada: 0,
-    situacao: 'programada'
+    km_chegada: 0
   }));
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     dispatch((0,_actions_viagens__WEBPACK_IMPORTED_MODULE_4__.loadViagens)());
@@ -74955,8 +75185,7 @@ const ChecklistView = () => {
     if (!viagemUrl) return;
     dispatch((0,_actions_viagem__WEBPACK_IMPORTED_MODULE_3__.updateViagem)(viagemUrl, _objectSpread(_objectSpread({}, form), {}, {
       km_saida: Number(form.km_saida),
-      km_chegada: Number(form.km_chegada),
-      situacao: form.checklist_resultado === 'apto' ? 'em_andamento' : 'programada'
+      km_chegada: Number(form.km_chegada)
     })));
   };
   return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -74966,7 +75195,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 50,
       columnNumber: 5
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
@@ -74976,14 +75205,14 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 55,
       columnNumber: 7
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 56,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form, {
@@ -74991,7 +75220,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 57,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Select, {
@@ -75008,7 +75237,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 58,
       columnNumber: 11
     }
   }), CHECKLIST_FIELDS.map(([field, label]) => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Checkbox, {
@@ -75019,7 +75248,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 71,
       columnNumber: 13
     }
   })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.TextArea, {
@@ -75029,7 +75258,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 73,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Select, {
@@ -75046,7 +75275,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 74,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75058,7 +75287,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 77,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75070,7 +75299,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 78,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
@@ -75080,7 +75309,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 79,
       columnNumber: 11
     }
   }, "Salvar checklist e quilometragem"), (status === null || status === void 0 ? void 0 : status.data) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -75088,7 +75317,7 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 80,
       columnNumber: 28
     }
   }, "Viagem atualizada."), (status === null || status === void 0 ? void 0 : status.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -75096,12 +75325,648 @@ const ChecklistView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 81,
       columnNumber: 29
     }
   }, "N\xE3o foi poss\xEDvel atualizar a viagem.")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChecklistView);
+
+/***/ },
+
+/***/ "./package-volto-transporte/src/components/view/DisponibilidadeView.jsx"
+/*!******************************************************************************!*\
+  !*** ./package-volto-transporte/src/components/view/DisponibilidadeView.jsx ***!
+  \******************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
+/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\DisponibilidadeView.jsx";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+
+
+
+
+
+const DisponibilidadeView = () => {
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const state = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte;
+    return (_store$transporte = store.transporte) === null || _store$transporte === void 0 ? void 0 : _store$transporte.disponibilidade;
+  });
+  const {
+    0: data,
+    1: setData
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(new Date().toISOString().slice(0, 10));
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (data) dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadDisponibilidade)(data));
+  }, [dispatch, data]);
+  const resultado = (state === null || state === void 0 ? void 0 : state.data) || {};
+  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    activePath: "/disponibilidade",
+    title: "Disponibilidade da frota",
+    description: "Consulte ve\xEDculos e motoristas livres na data selecionada.",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
+    style: {
+      marginTop: '2em'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "Data",
+    type: "date",
+    value: data,
+    onChange: event => setData(event.target.value),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 11
+    }
+  })), (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 26
+    }
+  }, "N\xE3o foi poss\xEDvel consultar a disponibilidade."), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Grid, {
+    columns: 2,
+    stackable: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Grid.Column, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 13
+    }
+  }, __jsx("h3", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 15
+    }
+  }, "Ve\xEDculos dispon\xEDveis"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
+    basic: "very",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 15
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 17
+    }
+  }, (resultado.veiculos || []).map(veiculo => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    key: veiculo.uid,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 21
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 23
+    }
+  }, veiculo.placa), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 23
+    }
+  }, veiculo.modelo))))))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Grid.Column, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 13
+    }
+  }, __jsx("h3", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 15
+    }
+  }, "Motoristas dispon\xEDveis"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
+    basic: "very",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 15
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 17
+    }
+  }, (resultado.motoristas || []).map(motorista => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    key: motorista.uid,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 21
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 23
+    }
+  }, motorista.nome), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 23
+    }
+  }, motorista.matricula))))))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DisponibilidadeView);
+
+/***/ },
+
+/***/ "./package-volto-transporte/src/components/view/MinhasSolicitacoes.jsx"
+/*!*****************************************************************************!*\
+  !*** ./package-volto-transporte/src/components/view/MinhasSolicitacoes.jsx ***!
+  \*****************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
+/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\MinhasSolicitacoes.jsx";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+
+
+
+
+
+const MinhasSolicitacoes = () => {
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const state = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte;
+    return (_store$transporte = store.transporte) === null || _store$transporte === void 0 ? void 0 : _store$transporte.minhasSolicitacoes;
+  });
+  const solicitacoes = (state === null || state === void 0 ? void 0 : state.data) || [];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadMinhasSolicitacoes)());
+  }, [dispatch]);
+  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    activePath: "/minhas-solicitacoes",
+    title: "Minhas solicita\xE7\xF5es",
+    description: "Consulte o andamento dos pedidos de transporte enviados por voc\xEA.",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 5
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
+    style: {
+      marginTop: '2em'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 7
+    }
+  }, (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 26
+    }
+  }, "N\xE3o foi poss\xEDvel carregar suas solicita\xE7\xF5es."), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
+    celled: true,
+    striped: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Header, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 15
+    }
+  }, "N\xFAmero"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 15
+    }
+  }, "Data e hor\xE1rio"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 15
+    }
+  }, "Destino"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 15
+    }
+  }, "Passageiros"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 15
+    }
+  }, "Situa\xE7\xE3o"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  }, solicitacoes.map(item => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    key: item['@id'],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 15
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }, item.id || item.title), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 17
+    }
+  }, item.data, " ", item.horario_saida), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 17
+    }
+  }, item.destino), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 17
+    }
+  }, item.qtd_passageiros), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 17
+    }
+  }, item.review_state || item.reviewState || 'Pendente')))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MinhasSolicitacoes);
+
+/***/ },
+
+/***/ "./package-volto-transporte/src/components/view/MotoristasAdmin.jsx"
+/*!**************************************************************************!*\
+  !*** ./package-volto-transporte/src/components/view/MotoristasAdmin.jsx ***!
+  \**************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
+/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\MotoristasAdmin.jsx";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+
+
+
+
+
+const MotoristasAdmin = () => {
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const state = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte;
+    return (_store$transporte = store.transporte) === null || _store$transporte === void 0 ? void 0 : _store$transporte.motoristas;
+  });
+  const updateState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte2;
+    return (_store$transporte2 = store.transporte) === null || _store$transporte2 === void 0 ? void 0 : _store$transporte2.motorista;
+  });
+  const motoristas = (state === null || state === void 0 ? void 0 : state.data) || [];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadMotoristas)());
+  }, [dispatch, updateState === null || updateState === void 0 ? void 0 : updateState.data]);
+  const alterarSituacao = (motorista, situacao) => {
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.updateMotorista)(motorista['@id'], {
+      situacao
+    }));
+  };
+  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    activePath: "/motoristas",
+    title: "Motoristas cadastrados",
+    description: "Revise os dados e aprove ou suspenda o acesso de motorista.",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 5
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
+    style: {
+      marginTop: '2em'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 7
+    }
+  }, (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 26
+    }
+  }, "N\xE3o foi poss\xEDvel carregar os motoristas."), (updateState === null || updateState === void 0 ? void 0 : updateState.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 32
+    }
+  }, "N\xE3o foi poss\xEDvel atualizar o cadastro."), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table, {
+    celled: true,
+    striped: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Header, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 15
+    }
+  }, "Nome"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 15
+    }
+  }, "Matr\xEDcula"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 15
+    }
+  }, "CNH"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 15
+    }
+  }, "Validade"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 15
+    }
+  }, "Telefone"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 15
+    }
+  }, "Situa\xE7\xE3o"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.HeaderCell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 15
+    }
+  }, "A\xE7\xF5es"))), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Body, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }, motoristas.map(motorista => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Row, {
+    key: motorista['@id'],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 15
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 17
+    }
+  }, motorista.nome), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 17
+    }
+  }, motorista.matricula), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 17
+    }
+  }, motorista.cnh), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 17
+    }
+  }, motorista.validade_cnh), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 17
+    }
+  }, motorista.telefone), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 17
+    }
+  }, motorista.situacao), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Table.Cell, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 17
+    }
+  }, motorista.situacao !== 'ativo' ? __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
+    positive: true,
+    onClick: () => alterarSituacao(motorista, 'ativo'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 21
+    }
+  }, "Aprovar motorista") : __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
+    negative: true,
+    onClick: () => alterarSituacao(motorista, 'inativo'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 21
+    }
+  }, "Suspender acesso"))))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MotoristasAdmin);
 
 /***/ },
 
@@ -75257,6 +76122,133 @@ const PainelGeral = () => {
 
 /***/ },
 
+/***/ "./package-volto-transporte/src/components/view/RelatorioMensalView.jsx"
+/*!******************************************************************************!*\
+  !*** ./package-volto-transporte/src/components/view/RelatorioMensalView.jsx ***!
+  \******************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
+/* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\RelatorioMensalView.jsx";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+
+
+
+
+
+const RelatorioMensalView = () => {
+  var _relatorio$total_viag, _relatorio$km_total, _relatorio$litros, _relatorio$valor_comb;
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const state = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(store => {
+    var _store$transporte;
+    return (_store$transporte = store.transporte) === null || _store$transporte === void 0 ? void 0 : _store$transporte.relatorioMensal;
+  });
+  const {
+    0: mes,
+    1: setMes
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(new Date().toISOString().slice(0, 7));
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (mes) dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.loadRelatorioMensal)(mes));
+  }, [dispatch, mes]);
+  const relatorio = (state === null || state === void 0 ? void 0 : state.data) || {};
+  return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    activePath: "/relatorio-mensal",
+    title: "Relat\xF3rio mensal",
+    description: "Consulte os principais indicadores de viagens e abastecimentos.",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
+    style: {
+      marginTop: '2em'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 9
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "M\xEAs",
+    type: "month",
+    value: mes,
+    onChange: event => setMes(event.target.value),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 11
+    }
+  })), (state === null || state === void 0 ? void 0 : state.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
+    negative: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 26
+    }
+  }, "N\xE3o foi poss\xEDvel carregar o relat\xF3rio."), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Grid, {
+    columns: 4,
+    stackable: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }
+  }, [['Total de viagens', (_relatorio$total_viag = relatorio.total_viagens) !== null && _relatorio$total_viag !== void 0 ? _relatorio$total_viag : 0], ['Km total', (_relatorio$km_total = relatorio.km_total) !== null && _relatorio$km_total !== void 0 ? _relatorio$km_total : 0], ['Litros', (_relatorio$litros = relatorio.litros) !== null && _relatorio$litros !== void 0 ? _relatorio$litros : 0], ['Valor de combustível', (_relatorio$valor_comb = relatorio.valor_combustivel) !== null && _relatorio$valor_comb !== void 0 ? _relatorio$valor_comb : 0]].map(([label, value]) => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Grid.Column, {
+    key: label,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 13
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
+    textAlign: "center",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 15
+    }
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Statistic, {
+    label: label,
+    value: value,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 17
+    }
+  })))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RelatorioMensalView);
+
+/***/ },
+
 /***/ "./package-volto-transporte/src/components/view/solicitacaoview.jsx"
 /*!**************************************************************************!*\
   !*** ./package-volto-transporte/src/components/view/solicitacaoview.jsx ***!
@@ -75276,6 +76268,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _actions_transporte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/transporte */ "./package-volto-transporte/src/actions/transporte.js");
 /* harmony import */ var _AppShell__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppShell */ "./package-volto-transporte/src/components/AppShell.jsx");
+/* harmony import */ var _plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @plone/volto/hooks/user/useUser */ "./node_modules/@plone/volto/src/hooks/user/useUser.js");
 var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\components\\view\\solicitacaoview.jsx";
 var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -75288,8 +76281,10 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
 
 
 
+
 const SolicitacaoView = () => {
   const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const user = (0,_plone_volto_hooks_user_useUser__WEBPACK_IMPORTED_MODULE_5__["default"])();
   const status = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => {
     var _state$transporte;
     return (_state$transporte = state.transporte) === null || _state$transporte === void 0 ? void 0 : _state$transporte.solicitacao;
@@ -75298,7 +76293,6 @@ const SolicitacaoView = () => {
     0: form,
     1: setForm
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    solicitante: '',
     setor: '',
     data: '',
     horario_saida: '',
@@ -75306,20 +76300,33 @@ const SolicitacaoView = () => {
     destino: '',
     qtd_passageiros: 1,
     motivo: '',
-    prioridade: 'media'
+    vai_dirigir: false,
+    nome_motorista: '',
+    matricula_motorista: '',
+    cnh_motorista: '',
+    validade_cnh_motorista: '',
+    telefone_motorista: ''
   });
   const update = field => (event, data) => {
-    var _data$value;
-    const value = (_data$value = data === null || data === void 0 ? void 0 : data.value) !== null && _data$value !== void 0 ? _data$value : event.target.value;
+    var _ref, _data$checked;
+    const value = (_ref = (_data$checked = data === null || data === void 0 ? void 0 : data.checked) !== null && _data$checked !== void 0 ? _data$checked : data === null || data === void 0 ? void 0 : data.value) !== null && _ref !== void 0 ? _ref : event.target.value;
     setForm(current => _objectSpread(_objectSpread({}, current), {}, {
       [field]: value
     }));
   };
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.createSolicitacao)(_objectSpread(_objectSpread({}, form), {}, {
+    const payload = _objectSpread(_objectSpread({}, form), {}, {
       qtd_passageiros: Number(form.qtd_passageiros)
-    })));
+    });
+    if (!form.vai_dirigir) {
+      delete payload.nome_motorista;
+      delete payload.matricula_motorista;
+      delete payload.cnh_motorista;
+      delete payload.validade_cnh_motorista;
+      delete payload.telefone_motorista;
+    }
+    dispatch((0,_actions_transporte__WEBPACK_IMPORTED_MODULE_3__.createSolicitacao)(payload));
   };
   return __jsx(_AppShell__WEBPACK_IMPORTED_MODULE_4__["default"], {
     activePath: "/solicitacao",
@@ -75328,7 +76335,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 42,
       columnNumber: 5
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Container, {
@@ -75338,14 +76345,14 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 48,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form, {
@@ -75353,18 +76360,17 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 49,
       columnNumber: 9
     }
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
     label: "Solicitante",
-    required: true,
-    value: form.solicitante,
-    onChange: update('solicitante'),
+    value: (user === null || user === void 0 ? void 0 : user.fullname) || (user === null || user === void 0 ? void 0 : user.username) || 'Usuário autenticado',
+    readOnly: true,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 50,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75375,7 +76381,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 55,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75387,7 +76393,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 56,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75399,7 +76405,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 57,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75410,7 +76416,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 58,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75421,7 +76427,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 59,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
@@ -75434,7 +76440,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 60,
       columnNumber: 11
     }
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.TextArea, {
@@ -75445,36 +76451,104 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 61,
       columnNumber: 11
     }
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Select, {
-    label: "Prioridade",
-    options: [{
-      text: 'Baixa',
-      value: 'baixa'
-    }, {
-      text: 'Média',
-      value: 'media'
-    }, {
-      text: 'Alta',
-      value: 'alta'
-    }],
-    value: form.prioridade,
-    onChange: update('prioridade'),
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Checkbox, {
+    label: "Eu serei o motorista desta viagem",
+    checked: form.vai_dirigir,
+    onChange: update('vai_dirigir'),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 62,
       columnNumber: 11
     }
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
+  }), form.vai_dirigir && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Segment, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 13
+    }
+  }, __jsx("h3", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 15
+    }
+  }, "Dados para cadastro de motorista"), __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 15
+    }
+  }, "O administrador revisar\xE1 estes dados antes de liberar o acesso de motorista."), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "Nome",
+    required: true,
+    value: form.nome_motorista,
+    onChange: update('nome_motorista'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 15
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "Matr\xEDcula",
+    required: true,
+    value: form.matricula_motorista,
+    onChange: update('matricula_motorista'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 15
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "CNH",
+    required: true,
+    value: form.cnh_motorista,
+    onChange: update('cnh_motorista'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 15
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "Validade da CNH",
+    type: "date",
+    required: true,
+    value: form.validade_cnh_motorista,
+    onChange: update('validade_cnh_motorista'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 15
+    }
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Form.Input, {
+    label: "Telefone",
+    type: "tel",
+    required: true,
+    value: form.telefone_motorista,
+    onChange: update('telefone_motorista'),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 15
+    }
+  })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {
     primary: true,
     type: "submit",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 78,
       columnNumber: 11
     }
   }, "Enviar para Aprova\xE7\xE3o"), (status === null || status === void 0 ? void 0 : status.data) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -75482,7 +76556,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 79,
       columnNumber: 28
     }
   }, "Solicita\xE7\xE3o enviada para an\xE1lise."), (status === null || status === void 0 ? void 0 : status.error) && __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__.Message, {
@@ -75490,7 +76564,7 @@ const SolicitacaoView = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 80,
       columnNumber: 29
     }
   }, "N\xE3o foi poss\xEDvel enviar a solicita\xE7\xE3o.")))));
@@ -75510,12 +76584,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_view_solicitacaoview__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/view/solicitacaoview */ "./package-volto-transporte/src/components/view/solicitacaoview.jsx");
-/* harmony import */ var _components_view_AprovacaoGestor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/view/AprovacaoGestor */ "./package-volto-transporte/src/components/view/AprovacaoGestor.jsx");
-/* harmony import */ var _components_view_AgendaViagensView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/view/AgendaViagensView */ "./package-volto-transporte/src/components/view/AgendaViagensView.jsx");
-/* harmony import */ var _components_view_ChecklistView__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/view/ChecklistView */ "./package-volto-transporte/src/components/view/ChecklistView.jsx");
-/* harmony import */ var _components_view_AbastecimentoForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/view/AbastecimentoForm */ "./package-volto-transporte/src/components/view/AbastecimentoForm.jsx");
-/* harmony import */ var _components_view_PainelGeral__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/view/PainelGeral */ "./package-volto-transporte/src/components/view/PainelGeral.jsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_view_solicitacaoview__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/view/solicitacaoview */ "./package-volto-transporte/src/components/view/solicitacaoview.jsx");
+/* harmony import */ var _components_view_MinhasSolicitacoes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/view/MinhasSolicitacoes */ "./package-volto-transporte/src/components/view/MinhasSolicitacoes.jsx");
+/* harmony import */ var _components_view_AprovacaoGestor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/view/AprovacaoGestor */ "./package-volto-transporte/src/components/view/AprovacaoGestor.jsx");
+/* harmony import */ var _components_view_AgendaViagensView__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/view/AgendaViagensView */ "./package-volto-transporte/src/components/view/AgendaViagensView.jsx");
+/* harmony import */ var _components_view_ChecklistView__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/view/ChecklistView */ "./package-volto-transporte/src/components/view/ChecklistView.jsx");
+/* harmony import */ var _components_view_AbastecimentoForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/view/AbastecimentoForm */ "./package-volto-transporte/src/components/view/AbastecimentoForm.jsx");
+/* harmony import */ var _components_view_PainelGeral__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/view/PainelGeral */ "./package-volto-transporte/src/components/view/PainelGeral.jsx");
+/* harmony import */ var _components_view_MotoristasAdmin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/view/MotoristasAdmin */ "./package-volto-transporte/src/components/view/MotoristasAdmin.jsx");
+/* harmony import */ var _components_view_DisponibilidadeView__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/view/DisponibilidadeView */ "./package-volto-transporte/src/components/view/DisponibilidadeView.jsx");
+/* harmony import */ var _components_view_RelatorioMensalView__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/view/RelatorioMensalView */ "./package-volto-transporte/src/components/view/RelatorioMensalView.jsx");
+/* harmony import */ var _components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/AccessGuard */ "./package-volto-transporte/src/components/AccessGuard.jsx");
+var _jsxFileName = "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\package-volto-transporte\\src\\config.js";
+var __jsx = (react__WEBPACK_IMPORTED_MODULE_0___default().createElement);
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+;
+
+
+
+
+
 
 
 
@@ -75525,22 +76615,133 @@ __webpack_require__.r(__webpack_exports__);
 const applyConfig = config => {
   config.addonRoutes = [...(config.addonRoutes || []), {
     path: '/solicitacao',
-    component: _components_view_solicitacaoview__WEBPACK_IMPORTED_MODULE_0__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_solicitacaoview__WEBPACK_IMPORTED_MODULE_1__["default"]
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 29
+      }
+    }))
+  }, {
+    path: '/minhas-solicitacoes',
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_MinhasSolicitacoes__WEBPACK_IMPORTED_MODULE_2__["default"],
+      roles: ['Solicitante']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 29
+      }
+    }))
   }, {
     path: '/aprovacao-gestor',
-    component: _components_view_AprovacaoGestor__WEBPACK_IMPORTED_MODULE_1__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_AprovacaoGestor__WEBPACK_IMPORTED_MODULE_3__["default"],
+      roles: ['Manager', 'Administrador']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 29
+      }
+    }))
   }, {
     path: '/agenda',
-    component: _components_view_AgendaViagensView__WEBPACK_IMPORTED_MODULE_2__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_AgendaViagensView__WEBPACK_IMPORTED_MODULE_4__["default"],
+      roles: ['Manager', 'Motorista']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 29
+      }
+    }))
   }, {
     path: '/checklist',
-    component: _components_view_ChecklistView__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_ChecklistView__WEBPACK_IMPORTED_MODULE_5__["default"],
+      roles: ['Manager', 'Motorista']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 29
+      }
+    }))
   }, {
     path: '/abastecimento',
-    component: _components_view_AbastecimentoForm__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_AbastecimentoForm__WEBPACK_IMPORTED_MODULE_6__["default"],
+      roles: ['Manager', 'Motorista']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 29
+      }
+    }))
   }, {
     path: '/painel',
-    component: _components_view_PainelGeral__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_PainelGeral__WEBPACK_IMPORTED_MODULE_7__["default"],
+      roles: ['Manager', 'Administrador']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 29
+      }
+    }))
+  }, {
+    path: '/motoristas',
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_MotoristasAdmin__WEBPACK_IMPORTED_MODULE_8__["default"],
+      roles: ['Manager', 'Administrador']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 29
+      }
+    }))
+  }, {
+    path: '/disponibilidade',
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_DisponibilidadeView__WEBPACK_IMPORTED_MODULE_9__["default"],
+      roles: ['Manager', 'Administrador']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 29
+      }
+    }))
+  }, {
+    path: '/relatorio-mensal',
+    component: props => __jsx(_components_AccessGuard__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({
+      component: _components_view_RelatorioMensalView__WEBPACK_IMPORTED_MODULE_10__["default"],
+      roles: ['Manager', 'Administrador']
+    }, props, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 29
+      }
+    }))
   }];
   return config;
 };
@@ -75621,6 +76822,11 @@ const initialState = {
     loading: false,
     error: null
   },
+  minhasSolicitacoes: {
+    data: [],
+    loading: false,
+    error: null
+  },
   solicitacao: {
     data: null,
     loading: false,
@@ -75647,6 +76853,16 @@ const initialState = {
     error: null
   },
   abastecimento: {
+    data: null,
+    loading: false,
+    error: null
+  },
+  motoristas: {
+    data: [],
+    loading: false,
+    error: null
+  },
+  motorista: {
     data: null,
     loading: false,
     error: null
@@ -75678,7 +76894,7 @@ function failureState(state, key, error) {
   });
 }
 function transporteReducer(state = initialState, action = {}) {
-  var _action$result, _action$result2, _action$result3;
+  var _action$result, _action$result2, _action$result3, _action$result4, _action$result5;
   switch (action.type) {
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_DISPONIBILIDADE}_PENDING`:
       return requestState(state, 'disponibilidade', true);
@@ -75704,6 +76920,12 @@ function transporteReducer(state = initialState, action = {}) {
       return successState(state, 'solicitacoes', ((_action$result = action.result) === null || _action$result === void 0 ? void 0 : _action$result.items) || []);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_SOLICITACOES}_FAIL`:
       return failureState(state, 'solicitacoes', action.error);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MINHAS_SOLICITACOES}_PENDING`:
+      return requestState(state, 'minhasSolicitacoes', true);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MINHAS_SOLICITACOES}_SUCCESS`:
+      return successState(state, 'minhasSolicitacoes', ((_action$result2 = action.result) === null || _action$result2 === void 0 ? void 0 : _action$result2.items) || []);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MINHAS_SOLICITACOES}_FAIL`:
+      return failureState(state, 'minhasSolicitacoes', action.error);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.CREATE_SOLICITACAO}_PENDING`:
       return requestState(state, 'solicitacao', true);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.CREATE_SOLICITACAO}_SUCCESS`:
@@ -75719,7 +76941,7 @@ function transporteReducer(state = initialState, action = {}) {
     case `${_actions_viagens__WEBPACK_IMPORTED_MODULE_1__.LOAD_VIAGENS}_PENDING`:
       return requestState(state, 'viagens', true);
     case `${_actions_viagens__WEBPACK_IMPORTED_MODULE_1__.LOAD_VIAGENS}_SUCCESS`:
-      return successState(state, 'viagens', ((_action$result2 = action.result) === null || _action$result2 === void 0 ? void 0 : _action$result2.items) || []);
+      return successState(state, 'viagens', ((_action$result3 = action.result) === null || _action$result3 === void 0 ? void 0 : _action$result3.items) || []);
     case `${_actions_viagens__WEBPACK_IMPORTED_MODULE_1__.LOAD_VIAGENS}_FAIL`:
       return failureState(state, 'viagens', action.error);
     case `${_actions_viagem__WEBPACK_IMPORTED_MODULE_2__.UPDATE_VIAGEM}_PENDING`:
@@ -75731,7 +76953,7 @@ function transporteReducer(state = initialState, action = {}) {
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_ABASTECIMENTOS}_PENDING`:
       return requestState(state, 'abastecimentos', true);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_ABASTECIMENTOS}_SUCCESS`:
-      return successState(state, 'abastecimentos', ((_action$result3 = action.result) === null || _action$result3 === void 0 ? void 0 : _action$result3.items) || []);
+      return successState(state, 'abastecimentos', ((_action$result4 = action.result) === null || _action$result4 === void 0 ? void 0 : _action$result4.items) || []);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_ABASTECIMENTOS}_FAIL`:
       return failureState(state, 'abastecimentos', action.error);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.CREATE_ABASTECIMENTO}_PENDING`:
@@ -75740,6 +76962,18 @@ function transporteReducer(state = initialState, action = {}) {
       return successState(state, 'abastecimento', action.result);
     case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.CREATE_ABASTECIMENTO}_FAIL`:
       return failureState(state, 'abastecimento', action.error);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MOTORISTAS}_PENDING`:
+      return requestState(state, 'motoristas', true);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MOTORISTAS}_SUCCESS`:
+      return successState(state, 'motoristas', ((_action$result5 = action.result) === null || _action$result5 === void 0 ? void 0 : _action$result5.items) || []);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.LOAD_MOTORISTAS}_FAIL`:
+      return failureState(state, 'motoristas', action.error);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.UPDATE_MOTORISTA}_PENDING`:
+      return requestState(state, 'motorista', true);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.UPDATE_MOTORISTA}_SUCCESS`:
+      return successState(state, 'motorista', action.result);
+    case `${_actions_transporte__WEBPACK_IMPORTED_MODULE_0__.UPDATE_MOTORISTA}_FAIL`:
+      return failureState(state, 'motorista', action.error);
     default:
       return state;
   }
@@ -77928,7 +79162,7 @@ module.exports = {
 /******/ 	__webpack_require__.hmrF = () => ("server." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
-/******/ 	__webpack_require__.h = () => ("1b4231d7ad664cff7d51");
+/******/ 	__webpack_require__.h = () => ("70a75ab3fb2ca69fc479");
 /******/ 	
 /******/ 	/* webpack/runtime/harmony module decorator */
 /******/ 	__webpack_require__.hmd = (module) => {

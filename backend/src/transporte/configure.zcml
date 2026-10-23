@@ -1,33 +1,76 @@
 <configure
      xmlns="http://namespaces.zope.org/zope"
        xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-     xmlns:browser="http://namespaces.zope.org/browser">
+     xmlns:plone="http://namespaces.plone.org/plone">
      <include package="plone.restapi" />
+  <permission id="transporte.ManageTransport" title="Manage transport" />
+  <permission id="transporte.UpdateChecklist" title="Update checklist" />
+  <permission id="transporte.AddSolicitacao" title="Add Solicitacao" />
+  <permission id="transporte.AddViagem" title="Add Viagem" />
+  <permission id="transporte.AddVeiculo" title="Add Veiculo" />
+  <permission id="transporte.AddMotorista" title="Add Motorista" />
+  <permission id="transporte.AddAbastecimento" title="Add Abastecimento" />
   <genericsetup:registerProfile
           name="default"
           title="Transporte Porto do Recife"
           directory="profiles/default"
           description="Tipos de conteúdo e workflow de transporte institucional."
           provides="Products.GenericSetup.interfaces.EXTENSION" />
-  <browser:page
+  <plone:service
+       method="GET"
        name="@disponibilidade"
-       for="plone.restapi.interfaces.IPloneRestapiLayer"
-       class="transporte.services.disponibilidade.DisponibilidadeGet"
-       permission="zope2.View" />
-  <browser:page
+       for="zope.interface.Interface"
+       layer="plone.restapi.interfaces.IPloneRestapiLayer"
+       factory="transporte.services.disponibilidade.DisponibilidadeGet"
+       permission="cmf.ManagePortal" />
+  <plone:service
+       method="GET"
        name="@painel"
-       for="plone.restapi.interfaces.IPloneRestapiLayer"
-       class="transporte.services.painel.PainelGet"
-       permission="zope2.View" />
-  <browser:page
+       for="zope.interface.Interface"
+       layer="plone.restapi.interfaces.IPloneRestapiLayer"
+       factory="transporte.services.painel.PainelGet"
+       permission="cmf.ManagePortal" />
+  <plone:service
+       method="GET"
        name="@relatorio-mensal"
-       for="plone.restapi.interfaces.IPloneRestapiLayer"
-       class="transporte.services.relatorio_mensal.RelatorioMensalGet"
-       permission="zope2.View" />
+       for="zope.interface.Interface"
+       layer="plone.restapi.interfaces.IPloneRestapiLayer"
+       factory="transporte.services.relatorio_mensal.RelatorioMensalGet"
+       permission="cmf.ManagePortal" />
+  <plone:service
+       method="POST"
+       name="@checklist"
+       for="zope.interface.Interface"
+       layer="plone.restapi.interfaces.IPloneRestapiLayer"
+       factory="transporte.services.checklist.ChecklistPost"
+       permission="transporte.UpdateChecklist" />
+  <plone:service
+       method="POST"
+       name="@decidir-solicitacao"
+       for="Products.CMFCore.interfaces.IContentish"
+       layer="plone.restapi.interfaces.IPloneRestapiLayer"
+       factory="transporte.services.decisao_solicitacao.DecisaoSolicitacaoPost"
+       permission="cmf.ManagePortal" />
+  <subscriber
+      for="transporte.content.solicitacao.ISolicitacao
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler="transporte.content.solicitacao.atribuir_proprietario" />
+  <subscriber
+      for="transporte.content.viagem.IViagem
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler="transporte.content.viagem.atribuir_proprietario" />
   <subscriber
       for="transporte.content.solicitacao.ISolicitacao
            Products.CMFCore.interfaces.IActionSucceededEvent"
       handler="transporte.content.solicitacao.criar_viagem_ao_aprovar" />
+  <subscriber
+      for="transporte.content.motorista.IMotorista
+           zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+      handler="transporte.security.sincronizar_permissoes_motorista" />
+  <subscriber
+      for="transporte.content.viagem.IViagem
+           zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+      handler="transporte.security.sincronizar_motorista_viagem" />
   <subscriber
       for="transporte.content.viagem.IViagem
            zope.lifecycleevent.interfaces.IObjectModifiedEvent"

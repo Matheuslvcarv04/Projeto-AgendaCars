@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Table, Button, Icon, Message } from 'semantic-ui-react';
 
@@ -9,13 +9,18 @@ const AprovacaoGestor = () => {
   const dispatch = useDispatch();
   const state = useSelector((store) => store.transporte?.solicitacoes);
   const pendentes = state?.data || [];
+  const transition = useSelector((store) => store.transporte?.transition);
+  const [pendingAction, setPendingAction] = useState(null);
 
   useEffect(() => {
     dispatch(loadSolicitacoes());
   }, [dispatch]);
 
   const decidir = (item, transition) => {
-    dispatch(transitionSolicitacao(item['@id'], transition)).then(() => dispatch(loadSolicitacoes()));
+    setPendingAction(`${item['@id']}:${transition}`);
+    dispatch(transitionSolicitacao(item['@id'], transition))
+      .then(() => dispatch(loadSolicitacoes()))
+      .finally(() => setPendingAction(null));
   };
 
   return (
@@ -47,15 +52,15 @@ const AprovacaoGestor = () => {
               <Table.Cell>{item.qtd_passageiros}</Table.Cell>
               <Table.Cell>{item.motivo}</Table.Cell>
               <Table.Cell collapsing>
-                <Button positive onClick={() => decidir(item, 'aprovar')}><Icon name="check" /> Aprovar</Button>
-                <Button color="yellow" onClick={() => decidir(item, 'alterar')}><Icon name="edit" /> Alterar</Button>
-                <Button negative onClick={() => decidir(item, 'recusar')}><Icon name="x" /> Recusar</Button>
+                <Button positive disabled={Boolean(pendingAction)} loading={pendingAction === `${item['@id']}:aprovar`} onClick={() => decidir(item, 'aprovar')}><Icon name="check" /> Aprovar</Button>
+                <Button negative disabled={Boolean(pendingAction)} loading={pendingAction === `${item['@id']}:recusar`} onClick={() => decidir(item, 'recusar')}><Icon name="x" /> Recusar</Button>
               </Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
       </Table>
         {state?.error && <Message negative>Não foi possível carregar as solicitações.</Message>}
+        {transition?.error && <Message negative>{transition.error.message || 'Não foi possível concluir a decisão da solicitação.'}</Message>}
       </Container>
     </AppShell>
   );

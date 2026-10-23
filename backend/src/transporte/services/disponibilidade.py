@@ -12,6 +12,9 @@ class DisponibilidadeGet(Service):
     """Lista veículos e motoristas sem viagem na data informada."""
 
     def reply(self):
+        if not self._is_manager():
+            self.request.response.setStatus(403)
+            return {"error": "Apenas administradores podem consultar a disponibilidade."}
         try:
             requested_date = parse_date(self.request.form.get("data"))
         except ValueError as error:
@@ -51,6 +54,13 @@ class DisponibilidadeGet(Service):
             "veiculos": [self._vehicle_info(vehicle) for vehicle in vehicles],
             "motoristas": [self._driver_info(driver) for driver in drivers],
         }
+
+    def _is_manager(self):
+        from AccessControl.SecurityManagement import getSecurityManager
+
+        return getSecurityManager().checkPermission(
+            "Manage transport", self.context
+        )
 
     @staticmethod
     def _vehicle_info(vehicle):

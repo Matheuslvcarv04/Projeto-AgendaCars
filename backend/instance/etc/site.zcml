@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:meta="http://namespaces.zope.org/meta"
+    xmlns:five="http://namespaces.zope.org/five">
+
+  <include package="Zope2.App" />
+
+  <!-- Load the meta -->
+  <include files="package-includes/*-meta.zcml" />
+  <five:loadProducts file="meta.zcml"/>
+
+  <!-- Load the configuration -->
+  <include files="package-includes/*-configure.zcml" />
+  <five:loadProducts />
+  <include package="transporte" />
+
+  <!-- Load the configuration overrides-->
+  <includeOverrides files="package-includes/*-overrides.zcml" />
+  <five:loadProductsOverrides />
+
+</configure>

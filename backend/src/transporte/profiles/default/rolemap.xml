@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rolemap>
+  <roles>
+    <role name="Solicitante" />
+    <role name="Motorista" />
+    <role name="MotoristaAtribuido" />
+    <role name="Administrador" />
+  </roles>
   <permissions>
+    <permission name="Manage portal" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Request review" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
     <permission name="Review portal content" acquire="False">
       <role name="Manager" />
-      <role name="Gestor" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Add Solicitacao" acquire="False">
+      <role name="Manager" />
+      <role name="Authenticated" />
+    </permission>
+    <permission name="Add Viagem" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Add Veiculo" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Add Motorista" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Add Abastecimento" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+      <role name="Motorista" />
+    </permission>
+    <permission name="Manage transport" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+    </permission>
+    <permission name="Update checklist" acquire="False">
+      <role name="Manager" />
+      <role name="Administrador" />
+      <role name="MotoristaAtribuido" />
     </permission>
   </permissions>
 </rolemap>

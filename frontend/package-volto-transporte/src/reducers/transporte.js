@@ -3,10 +3,13 @@ import {
   LOAD_PAINEL,
   LOAD_RELATORIO_MENSAL,
   LOAD_SOLICITACOES,
+  LOAD_MINHAS_SOLICITACOES,
   CREATE_SOLICITACAO,
   TRANSITION_SOLICITACAO,
   LOAD_ABASTECIMENTOS,
   CREATE_ABASTECIMENTO,
+  LOAD_MOTORISTAS,
+  UPDATE_MOTORISTA,
 } from '../actions/transporte';
 import { LOAD_VIAGENS } from '../actions/viagens';
 import { UPDATE_VIAGEM } from '../actions/viagem';
@@ -16,12 +19,15 @@ const initialState = {
   painel: { data: null, loading: false, error: null },
   relatorioMensal: { data: null, loading: false, error: null },
   solicitacoes: { data: [], loading: false, error: null },
+  minhasSolicitacoes: { data: [], loading: false, error: null },
   solicitacao: { data: null, loading: false, error: null },
   transition: { data: null, loading: false, error: null },
   viagens: { data: [], loading: false, error: null },
   viagem: { data: null, loading: false, error: null },
   abastecimentos: { data: [], loading: false, error: null },
   abastecimento: { data: null, loading: false, error: null },
+  motoristas: { data: [], loading: false, error: null },
+  motorista: { data: null, loading: false, error: null },
 };
 
 function requestState(state, key, loading) {
@@ -83,6 +89,12 @@ export default function transporteReducer(state = initialState, action = {}) {
       return successState(state, 'solicitacoes', action.result?.items || []);
     case `${LOAD_SOLICITACOES}_FAIL`:
       return failureState(state, 'solicitacoes', action.error);
+    case `${LOAD_MINHAS_SOLICITACOES}_PENDING`:
+      return requestState(state, 'minhasSolicitacoes', true);
+    case `${LOAD_MINHAS_SOLICITACOES}_SUCCESS`:
+      return successState(state, 'minhasSolicitacoes', action.result?.items || []);
+    case `${LOAD_MINHAS_SOLICITACOES}_FAIL`:
+      return failureState(state, 'minhasSolicitacoes', action.error);
     case `${CREATE_SOLICITACAO}_PENDING`:
       return requestState(state, 'solicitacao', true);
     case `${CREATE_SOLICITACAO}_SUCCESS`:
@@ -119,6 +131,18 @@ export default function transporteReducer(state = initialState, action = {}) {
       return successState(state, 'abastecimento', action.result);
     case `${CREATE_ABASTECIMENTO}_FAIL`:
       return failureState(state, 'abastecimento', action.error);
+    case `${LOAD_MOTORISTAS}_PENDING`:
+      return requestState(state, 'motoristas', true);
+    case `${LOAD_MOTORISTAS}_SUCCESS`:
+      return successState(state, 'motoristas', action.result?.items || []);
+    case `${LOAD_MOTORISTAS}_FAIL`:
+      return failureState(state, 'motoristas', action.error);
+    case `${UPDATE_MOTORISTA}_PENDING`:
+      return requestState(state, 'motorista', true);
+    case `${UPDATE_MOTORISTA}_SUCCESS`:
+      return successState(state, 'motorista', action.result);
+    case `${UPDATE_MOTORISTA}_FAIL`:
+      return failureState(state, 'motorista', action.error);
     default:
       return state;
   }

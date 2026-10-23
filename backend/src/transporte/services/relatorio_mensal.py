@@ -12,6 +12,15 @@ class RelatorioMensalGet(Service):
     """Agrega viagens, quilometragem e abastecimentos do mês."""
 
     def reply(self):
+        from AccessControl.SecurityManagement import getSecurityManager
+
+        if not getSecurityManager().checkPermission(
+            "Manage transport", self.context
+        ):
+            self.request.response.setStatus(403)
+            return {
+                "error": "Apenas administradores podem consultar o relatório mensal."
+            }
         month = self.request.form.get("mes")
         if not month or len(month) != 7 or month[4] != "-":
             self.request.response.setStatus(400)

@@ -12,6 +12,13 @@ class PainelGet(Service):
     """Retorna contagens de viagens do dia e veículos disponíveis."""
 
     def reply(self):
+        from AccessControl.SecurityManagement import getSecurityManager
+
+        if not getSecurityManager().checkPermission(
+            "Manage transport", self.context
+        ):
+            self.request.response.setStatus(403)
+            return {"error": "Apenas administradores podem consultar o painel."}
         today = date.today()
         viagens = [
             viagem

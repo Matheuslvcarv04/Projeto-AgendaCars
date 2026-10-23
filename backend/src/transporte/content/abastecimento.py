@@ -17,8 +17,8 @@ class IAbastecimento(model.Schema):
     )
     data = schema.Date(title="Data", required=True)
     quilometragem = schema.Int(title="Quilometragem", min=0, required=True)
-    litros = schema.Float(title="Litros", min=0, required=True)
-    valor = schema.Float(title="Valor", min=0, required=True)
+    litros = schema.Float(title="Litros", min=0.0, required=True)
+    valor = schema.Float(title="Valor", min=0.0, required=True)
     posto = schema.TextLine(title="Posto", required=True)
     motorista = RelationChoice(
         title="Motorista",

@@ -1,5 +1,5 @@
 {
-  "hash": "e9954cea743d159d892b",
+  "hash": "2764458ecf1338483196",
   "publicPath": "http://localhost:3001/",
   "outputPath": "C:\\Users\\matheus.lcarvalho\\Documents\\agend-veic\\frontend\\build\\public",
   "assetsByChunkName": {
@@ -93,6 +93,22 @@
       "static/media/log-out.8671f66f.svg",
       "static/media/subtext.40c0c08f.svg",
       "static/media/table.0c8c5812.svg",
+      "static/media/bold.dcf91fd5.svg",
+      "static/media/format-clear.f3792997.svg",
+      "static/media/heading.fb35a822.svg",
+      "static/media/italic.b9ca447f.svg",
+      "static/media/list-numbered.db0ca3d1.svg",
+      "static/media/subheading.e6b99d8a.svg",
+      "static/media/underline.a3d67623.svg",
+      "static/media/strikethrough.7f54e527.svg",
+      "static/media/subindex.2899b792.svg",
+      "static/media/superindex.0c3a8b35.svg",
+      "static/media/row-before.94de1b93.svg",
+      "static/media/row-after.f18383dd.svg",
+      "static/media/column-before.da184eda.svg",
+      "static/media/column-after.0def2a4a.svg",
+      "static/media/row-delete.c958d1e3.svg",
+      "static/media/column-delete.61fcc2eb.svg",
       "static/media/flags.9c74e172.png",
       "static/media/icons.dbc1ef8b.eot",
       "static/media/icons.df45b7de.woff",
@@ -116,22 +132,6 @@
       "static/media/Poppins-Bold-devanagari.7def222d.woff2",
       "static/media/Poppins-Bold-latinext.96b6d546.woff2",
       "static/media/Poppins-Bold-latin.25b0e113.woff2",
-      "static/media/bold.dcf91fd5.svg",
-      "static/media/format-clear.f3792997.svg",
-      "static/media/heading.fb35a822.svg",
-      "static/media/italic.b9ca447f.svg",
-      "static/media/list-numbered.db0ca3d1.svg",
-      "static/media/subheading.e6b99d8a.svg",
-      "static/media/underline.a3d67623.svg",
-      "static/media/strikethrough.7f54e527.svg",
-      "static/media/subindex.2899b792.svg",
-      "static/media/superindex.0c3a8b35.svg",
-      "static/media/row-before.94de1b93.svg",
-      "static/media/row-after.f18383dd.svg",
-      "static/media/column-before.da184eda.svg",
-      "static/media/column-after.0def2a4a.svg",
-      "static/media/row-delete.c958d1e3.svg",
-      "static/media/column-delete.61fcc2eb.svg",
       "static/media/quote.b5857ad5.svg",
       "static/media/paint.8ff9a5ab.svg",
       "static/js/client.js.map"
@@ -206,7 +206,7 @@
     {
       "type": "asset",
       "name": "static/js/client.js",
-      "size": 15023340,
+      "size": 15056409,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -512,6 +512,31 @@
     },
     {
       "type": "asset",
+      "name": "static/js/RulesControlpanel.chunk.js",
+      "size": 222845,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "static/js/RulesControlpanel.chunk.js.map"
+        }
+      },
+      "chunkNames": [
+        "RulesControlpanel"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "RulesControlpanel"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "static/media/icons.022583c4.svg",
       "size": 199380,
       "emitted": false,
@@ -549,31 +574,6 @@
       "filteredRelated": 1,
       "chunks": [
         "node_modules_diff_dist_diff_js"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "static/js/RulesControlpanel.chunk.js",
-      "size": 184730,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "static/js/RulesControlpanel.chunk.js.map"
-        }
-      },
-      "chunkNames": [
-        "RulesControlpanel"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "RulesControlpanel"
       ],
       "auxiliaryChunks": []
     },

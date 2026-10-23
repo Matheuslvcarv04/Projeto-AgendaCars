@@ -28,9 +28,14 @@ class IMotorista(model.Schema):
         title="Telefone",
         required=True,
     )
+    usuario_id = schema.TextLine(
+        title="Usuário Plone vinculado",
+        required=False,
+        readonly=True,
+    )
     situacao = schema.Choice(
         title="Situação",
-        values=("ativo", "inativo"),
-        default="ativo",
+        values=("pendente", "ativo", "inativo"),
+        default="pendente",
         required=True,
     )

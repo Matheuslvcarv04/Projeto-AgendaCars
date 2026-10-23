@@ -21,7 +21,7 @@ const ChecklistView = () => {
   const [form, setForm] = useState({
     ...Object.fromEntries(CHECKLIST_FIELDS.map(([field]) => [field, false])),
     estado_geral: '', checklist_resultado: 'com_problema', km_saida: 0,
-    km_chegada: 0, situacao: 'programada',
+    km_chegada: 0,
   });
 
   useEffect(() => {
@@ -43,7 +43,6 @@ const ChecklistView = () => {
       ...form,
       km_saida: Number(form.km_saida),
       km_chegada: Number(form.km_chegada),
-      situacao: form.checklist_resultado === 'apto' ? 'em_andamento' : 'programada',
     }));
   };
 

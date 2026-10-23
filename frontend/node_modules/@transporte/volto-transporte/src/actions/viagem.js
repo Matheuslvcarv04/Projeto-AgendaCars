@@ -4,8 +4,8 @@ export function updateViagem(url, data) {
   return {
     type: UPDATE_VIAGEM,
     request: {
-      op: 'patch',
-      path: url,
+      op: 'post',
+      path: `${url}/@checklist`,
       data,
     },
   };
